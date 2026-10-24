@@ -1,0 +1,52 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package age.of.civilizations2.jakowski.lukasz;
+
+import age.of.civilizations2.jakowski.lukasz.Button_Game;
+import age.of.civilizations2.jakowski.lukasz.CFG;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class Button_Game_TextTwoLines
+extends Button_Game {
+    public String sTextBot;
+    public int iTextBotWidth = 0;
+
+    public Button_Game_TextTwoLines(String sText, String sTextBot, int iTextPositionX, int iPosX, int iPosY, int nWidth, boolean isClickable) {
+        super(sText, iTextPositionX, iPosX, iPosY, nWidth, isClickable);
+        this.sTextBot = sTextBot;
+        CFG.fontMain.getData().setScale(0.8f);
+        CFG.glyphLayout.setText(CFG.fontMain, sTextBot);
+        this.iTextBotWidth = (int)CFG.glyphLayout.width;
+        CFG.fontMain.getData().setScale(1.0f);
+    }
+
+    @Override
+    public void drawText(SpriteBatch oSB, int iTranslateX, int iTranslateY, boolean isActive) {
+        if (isActive) {
+            CFG.drawText(oSB, this.getTextToDraw(), this.getPosX() + (this.getWidth() - super.getTextWidth()) / 2 + iTranslateX, this.getPosY() + this.getHeight() / 2 - CFG.PADDING / 2 - this.iTextHeight + iTranslateY, this.getColor(isActive));
+        } else {
+            CFG.drawTextWithShadow(oSB, this.getTextToDraw(), this.getPosX() + (this.getWidth() - super.getTextWidth()) / 2 + iTranslateX, this.getPosY() + this.getHeight() / 2 - CFG.PADDING / 2 - this.iTextHeight + iTranslateY, this.getColor(isActive));
+        }
+        CFG.fontMain.getData().setScale(0.8f);
+        CFG.drawTextWithShadow(oSB, this.sTextBot, this.getPosX() + (this.getWidth() - this.iTextBotWidth) / 2 + iTranslateX, this.getPosY() + this.getHeight() / 2 + CFG.PADDING + (CFG.TEXT_HEIGHT - CFG.TEXT_HEIGHT) / 2 + iTranslateY, new Color(0.46f, 0.46f, 0.46f, 1.0f));
+        CFG.fontMain.getData().setScale(1.0f);
+    }
+
+    @Override
+    public int getTextWidth() {
+        return super.getTextWidth() > this.iTextBotWidth ? super.getTextWidth() : this.iTextBotWidth;
+    }
+
+    @Override
+    public int getTextPos() {
+        return super.getTextWidth();
+    }
+
+    @Override
+    public Color getColor(boolean isActive) {
+        return isActive ? CFG.COLOR_BUTTON_GAME_TEXT_ACTIVE : (this.getClickable() ? (this.getIsHovered() ? CFG.COLOR_BUTTON_GAME_TEXT_HOVERED : CFG.COLOR_BUTTON_GAME_TEXT) : CFG.COLOR_BUTTON_GAME_TEXT_NOT_CLICKABLE);
+    }
+}
+

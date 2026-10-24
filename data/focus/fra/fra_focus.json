@@ -1,0 +1,643 @@
+{
+  "name": "Франция",
+  "CivTag": "fra",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_FRA_MOB",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_FRA_MOB",
+      "icon": "focus_fra_mob",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 300
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_FRA_ARMY",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_FRA_ARMY",
+      "icon": "focus_fra_army",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 45
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 45
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRA_PLAN",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_FRA_PLAN",
+      "icon": "focus_fra_plan",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 50
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRA_FRONT",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_FRA_FRONT",
+      "icon": "focus_fra_front",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_FRA_MAGINOT",
+      "present": [
+        "BE2_F_FRA_ARMY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRA_MAGINOT",
+      "icon": "focus_fra_maginot",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.3,
+          "Turns": 70
+        },
+        {
+          "type": "Money",
+          "Value": -800
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRA_SCHOOL",
+      "present": [
+        "BE2_F_FRA_FRONT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRA_SCHOOL",
+      "icon": "focus_fra_school",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_FRA_INDUSTRY",
+      "present": [
+        "BE2_F_FRA_PLAN"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRA_INDUSTRY",
+      "icon": "focus_fra_industry",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3,
+          "Turns": 70
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.3,
+          "Turns": 70
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRA_COLONIES",
+      "present": [
+        "BE2_F_FRA_INDUSTRY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_COLONIES",
+      "icon": "focus_fra_colonies",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_FRA_DUNKERQUE",
+      "present": [
+        "BE2_F_FRA_MOB"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_DUNKERQUE",
+      "icon": "focus_fra_dunkerque",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 3
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_FRA_BATTLE",
+      "present": [
+        "BE2_F_FRA_DUNKERQUE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_BATTLE",
+      "icon": "focus_fra_battle",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 50
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.25,
+          "Turns": 50
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_FRA_FREE",
+      "present": [
+        "BE2_F_FRA_MOB"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_FREE",
+      "icon": "focus_fra_free",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "ParlamentaricRepulic"
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.3,
+          "Turns": 70
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRA_GB",
+      "present": [
+        "BE2_F_FRA_FREE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_GB",
+      "icon": "focus_fra_gb",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "eng",
+          "Relation": 0.5
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRA_CHATEAU",
+      "present": [
+        "BE2_F_FRA_PLAN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_CHATEAU",
+      "icon": "focus_fra_chateau",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "Autocracy"
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_FRA_CIVILWAR",
+      "present": [
+        "BE2_F_FRA_BATTLE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_CIVILWAR",
+      "icon": "focus_fra_civilwar",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "fra_b",
+          "RebelGroup": "fra",
+          "Share": 0.25,
+          "Dominance": 0.45,
+          "Government": "Bonapartism",
+          "Cities": [
+            "Paris",
+            "Lyon",
+            "Marseille"
+          ],
+          "Connect": true,
+          "Disconnected": true,
+          "TakeControl": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -0.2
+        },
+        {
+          "type": "Happiness",
+          "Value": -25
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_FRA_RESISTANCE",
+      "present": [
+        "BE2_F_FRA_BATTLE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1942,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_RESISTANCE",
+      "icon": "focus_fra_resistance",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -0.05
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.3,
+          "Turns": 50
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 50
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_FRA_LIBERATION",
+      "present": [
+        "BE2_F_FRA_RESISTANCE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_LIBERATION",
+      "icon": "focus_fra_liberation",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.3
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.3,
+          "Turns": 40
+        },
+        {
+          "type": "Happiness",
+          "Value": 20
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRA_ATOM",
+      "present": [
+        "BE2_F_FRA_COLONIES"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_ATOM",
+      "icon": "focus_fra_atom",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_FRA_AFRIQUE",
+      "present": [
+        "BE2_F_FRA_COLONIES"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_AFRIQUE",
+      "icon": "focus_fra_afrique",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 40
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_FRA_UNION",
+      "present": [
+        "BE2_F_FRA_LIBERATION"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_UNION",
+      "icon": "focus_fra_union",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 500000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.4,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.2,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_FRA_PUISSANCE",
+      "present": [
+        "BE2_F_FRA_UNION"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1946,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_FRA_PUISSANCE",
+      "icon": "focus_fra_puissance",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Tech",
+          "Value": 3
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 500
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 25
+    }
+  ]
+}

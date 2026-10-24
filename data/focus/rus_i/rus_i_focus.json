@@ -1,0 +1,1276 @@
+{
+  "name": "Федерация Россия",
+  "CivTag": "rus_i",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_RUSI_USTAV",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_USTAV",
+      "icon": "focus_rus_ustav",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Money",
+          "Value": 400
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSI_FEDREP",
+      "present": [
+        "BE2_F_RUSI_USTAV"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_FEDREP",
+      "icon": "focus_rus_fedrep",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_SELOVET",
+      "present": [
+        "BE2_F_RUSI_FEDREP"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_SELOVET",
+      "icon": "focus_rus_selovet",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_SUDY",
+      "present": [
+        "BE2_F_RUSI_SELOVET"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_SUDY",
+      "icon": "focus_rus_sudy",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUSI_GLASNOST",
+      "present": [
+        "BE2_F_RUSI_USTAV"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_GLASNOST",
+      "icon": "focus_rus_glasnost",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": 12
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_VYBORY",
+      "present": [
+        "BE2_F_RUSI_GLASNOST",
+        "BE2_F_RUSI_FEDREP"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_VYBORY",
+      "icon": "focus_rus_vybory",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_PARLAMENT",
+      "present": [
+        "BE2_F_RUSI_VYBORY",
+        "BE2_F_RUSI_SELOVET"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_PARLAMENT",
+      "icon": "focus_rus_parlament",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "MixedRepublic"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUSI_SOBRANA",
+      "present": [
+        "BE2_F_RUSI_VYBORY",
+        "BE2_F_RUSI_GLASNOST"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_SOBRANA",
+      "icon": "focus_rus_sobrana",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "DirectDemocracy"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUSI_VOENKOM",
+      "present": [
+        "BE2_F_RUSI_VYBORY",
+        "BE2_F_RUSI_SOKRASH"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_VOENKOM",
+      "icon": "focus_rus_voenkom",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "Dictatorshipoftheproletariat"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -20
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUSI_DENREFORM",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_DENREFORM",
+      "icon": "focus_rus_denreform",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSI_TORGOVLA",
+      "present": [
+        "BE2_F_RUSI_DENREFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_TORGOVLA",
+      "icon": "focus_rus_torgovla",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 900
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_KOLHOS",
+      "present": [
+        "BE2_F_RUSI_DENREFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_KOLHOS",
+      "icon": "focus_rus_kolhos",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 4000
+        },
+        {
+          "type": "Money",
+          "Value": 1300
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_PRIVAT",
+      "present": [
+        "BE2_F_RUSI_TORGOVLA",
+        "BE2_F_RUSI_KOLHOS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1947,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_PRIVAT",
+      "icon": "focus_rus_privat",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 0.05
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_NEFTEGAZ",
+      "present": [
+        "BE2_F_RUSI_TORGOVLA",
+        "BE2_F_RUSI_KOLHOS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1948,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_NEFTEGAZ",
+      "icon": "focus_rus_neftegaz",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_DNEPRO",
+      "present": [
+        "BE2_F_RUSI_PRIVAT",
+        "BE2_F_RUSI_KOLHOS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_DNEPRO",
+      "icon": "focus_rus_dnepro",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2500
+        },
+        {
+          "type": "Happiness",
+          "Value": 12
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_ZHDOROGI",
+      "present": [
+        "BE2_F_RUSI_DNEPRO",
+        "BE2_F_RUSI_NEFTEGAZ"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1950,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_ZHDOROGI",
+      "icon": "focus_rus_zhdorogi",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 1300
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUSI_SOKRASH",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_SOKRASH",
+      "icon": "focus_rus_sokrash",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 1200
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSI_OFFICERKORP",
+      "present": [
+        "BE2_F_RUSI_SOKRASH"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_OFFICERKORP",
+      "icon": "focus_rus_officerkorp",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_ZAPAD",
+      "present": [
+        "BE2_F_RUSI_OFFICERKORP",
+        "BE2_F_RUSI_SOKRASH"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1946,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_ZAPAD",
+      "icon": "focus_rus_zapad",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -800
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_BRONETANK",
+      "present": [
+        "BE2_F_RUSI_OFFICERKORP"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_BRONETANK",
+      "icon": "focus_rus_bronetank",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Money",
+          "Value": -700
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_AVIA",
+      "present": [
+        "BE2_F_RUSI_SOKRASH"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_AVIA",
+      "icon": "focus_rus_avia",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": -700
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_DALNAYA",
+      "present": [
+        "BE2_F_RUSI_AVIA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1950,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_DALNAYA",
+      "icon": "focus_rus_dalnaya",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUSI_PRIBALT",
+      "present": [
+        "BE2_F_RUSI_SOKRASH",
+        "BE2_F_RUSI_NEUTRAL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1948,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_PRIBALT",
+      "icon": "focus_rus_pribalt",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 4000000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.15
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUSI_NAUKA",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_NAUKA",
+      "icon": "focus_rus_nauka",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSI_DNEPRGES",
+      "present": [
+        "BE2_F_RUSI_NAUKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1947,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_DNEPRGES",
+      "icon": "focus_rus_dneprges",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 1600
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_ATOMPROEKT",
+      "present": [
+        "BE2_F_RUSI_DNEPRGES",
+        "BE2_F_RUSI_NAUKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1949,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_ATOMPROEKT",
+      "icon": "focus_rus_atomproekt",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 1
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUSI_RAKETY",
+      "present": [
+        "BE2_F_RUSI_ATOMPROEKT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1951,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_RAKETY",
+      "icon": "focus_rus_rakety",
+      "effect": [
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -1800
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUSI_SPUTNIK",
+      "present": [
+        "BE2_F_RUSI_RAKETY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1954,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_SPUTNIK",
+      "icon": "focus_rus_sputnik",
+      "effect": [
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_RUSI_KOSMOS",
+      "present": [
+        "BE2_F_RUSI_SPUTNIK"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1955,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_KOSMOS",
+      "icon": "focus_rus_kosmos",
+      "effect": [
+        {
+          "type": "Tech",
+          "Value": 3
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 20
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_RUSI_NEUTRAL",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_NEUTRAL",
+      "icon": "focus_rus_neutral",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Money",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSI_OON",
+      "present": [
+        "BE2_F_RUSI_NEUTRAL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_OON",
+      "icon": "focus_rus_oon",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_SSSRIVAL",
+      "present": [
+        "BE2_F_RUSI_NEUTRAL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_SSSRIVAL",
+      "icon": "focus_rus_sssrival",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSI_VJETNAM",
+      "present": [
+        "BE2_F_RUSI_OON",
+        "BE2_F_RUSI_SSSRIVAL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSI_VJETNAM",
+      "icon": "focus_rus_vjetnam",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 120000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Money",
+          "Value": -700
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUSI_RAZRJAD",
+      "present": [
+        "BE2_F_RUSI_SSSRIVAL",
+        "BE2_F_RUSI_OON"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1950,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_RAZRJAD",
+      "icon": "focus_rus_razrjad",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.15
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUSI_RASSKOL",
+      "present": [
+        "BE2_F_RUSI_KOSMOS",
+        "BE2_F_RUSI_DALNAYA",
+        "BE2_F_RUSI_RAZRJAD",
+        "BE2_F_RUSI_PRIVAT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1955,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUSI_RASSKOL",
+      "icon": "focus_rus_rasskol",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "rus_q",
+          "RebelGroup": "rus",
+          "Share": 0.35,
+          "Dominance": 0.45,
+          "Government": "MixedRepublic",
+          "From": "west",
+          "Band": 0.45,
+          "TakeControl": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Happiness",
+          "Value": -25
+        },
+        {
+          "type": "Money",
+          "Value": -1500
+        }
+      ],
+      "FinishTurns": 85,
+      "AI_Trend": 20
+    }
+  ]
+}

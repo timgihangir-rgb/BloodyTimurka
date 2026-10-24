@@ -1,0 +1,1286 @@
+{
+  "name": "Великобритания",
+  "CivTag": "eng",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_ENG_FLEET",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_ENG_FLEET",
+      "icon": "focus_eng_fleet",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 40000
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENG_INDUSTRY",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_ENG_INDUSTRY",
+      "icon": "focus_eng_industry",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENG_EMPIRE",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_ENG_EMPIRE",
+      "icon": "focus_eng_empire",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 800
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENG_WELFARE",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_ENG_WELFARE",
+      "icon": "focus_eng_welfare",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -800
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENG_PEACE",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_ENG_PEACE",
+      "icon": "focus_eng_peace",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 600
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_FLEETBUILD",
+      "present": [
+        "BE2_F_ENG_FLEET"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_FLEETBUILD",
+      "icon": "focus_eng_fleetbuild",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 80
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        },
+        {
+          "type": "Money",
+          "Value": -900
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENG_RAF",
+      "present": [
+        "BE2_F_ENG_FLEET"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_RAF",
+      "icon": "focus_eng_raf",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -800
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENG_ARMY",
+      "present": [
+        "BE2_F_ENG_FLEET"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_ARMY",
+      "icon": "focus_eng_army",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENG_TANKDESIGN",
+      "present": [
+        "BE2_F_ENG_FLEETBUILD"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1938,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_TANKDESIGN",
+      "icon": "focus_eng_tankdesign",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1400
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_AIRDEFENCE",
+      "present": [
+        "BE2_F_ENG_RAF"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_AIRDEFENCE",
+      "icon": "focus_eng_airdefence",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_DEFENCES",
+      "present": [
+        "BE2_F_ENG_FLEETBUILD",
+        "BE2_F_ENG_AIRDEFENCE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_DEFENCES",
+      "icon": "focus_eng_defences",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.35,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -1200
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_ENG_MOBILISATION",
+      "present": [
+        "BE2_F_ENG_ARMY",
+        "BE2_F_ENG_TANKDESIGN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_MOBILISATION",
+      "icon": "focus_eng_mobilisation",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 400000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -15
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_JUNTA",
+      "present": [
+        "BE2_F_ENG_MOBILISATION",
+        "BE2_F_ENG_DEFENCES"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_JUNTA",
+      "icon": "focus_eng_junta",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "Bonapartism"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_ENG_AIRCRAFTMARKET",
+      "present": [
+        "BE2_F_ENG_INDUSTRY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_AIRCRAFTMARKET",
+      "icon": "focus_eng_aircraftmarket",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_AUTOMOBILE",
+      "present": [
+        "BE2_F_ENG_INDUSTRY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_AUTOMOBILE",
+      "icon": "focus_eng_automobile",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 900
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_RADIOTV",
+      "present": [
+        "BE2_F_ENG_INDUSTRY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_RADIOTV",
+      "icon": "focus_eng_radiotv",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_TUBEALLOY",
+      "present": [
+        "BE2_F_ENG_INDUSTRY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_TUBEALLOY",
+      "icon": "focus_eng_tubealloy",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25,
+          "Turns": 80
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1500
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_ENG_JETPROGRAM",
+      "present": [
+        "BE2_F_ENG_AIRCRAFTMARKET",
+        "BE2_F_ENG_TUBEALLOY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_JETPROGRAM",
+      "icon": "focus_eng_jetprogram",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_ENG_RADAR",
+      "present": [
+        "BE2_F_ENG_TUBEALLOY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_RADAR",
+      "icon": "focus_eng_radar",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_ATOMWEAPON",
+      "present": [
+        "BE2_F_ENG_RADAR",
+        "BE2_F_ENG_JETPROGRAM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_ATOMWEAPON",
+      "icon": "focus_eng_atomweapon",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 40
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_ENG_WESTMINSTER",
+      "present": [
+        "BE2_F_ENG_EMPIRE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_WESTMINSTER",
+      "icon": "focus_eng_westminster",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_INDIARULE",
+      "present": [
+        "BE2_F_ENG_WESTMINSTER"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_INDIARULE",
+      "icon": "focus_eng_indiarule",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_INDIANFREE",
+      "present": [
+        "BE2_F_ENG_INDIARULE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_INDIANFREE",
+      "icon": "focus_eng_indianfree",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": -0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_ENG_AUSTRALIA",
+      "present": [
+        "BE2_F_ENG_WESTMINSTER"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_AUSTRALIA",
+      "icon": "focus_eng_australia",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_DECOLONISATION",
+      "present": [
+        "BE2_F_ENG_INDIANFREE",
+        "BE2_F_ENG_AUSTRALIA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1948,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_DECOLONISATION",
+      "icon": "focus_eng_decolonisation",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": -0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_ENG_PENSIONS",
+      "present": [
+        "BE2_F_ENG_WELFARE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_PENSIONS",
+      "icon": "focus_eng_pensions",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENG_LABOURPARTY",
+      "present": [
+        "BE2_F_ENG_WELFARE",
+        "BE2_F_ENG_PENSIONS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_LABOURPARTY",
+      "icon": "focus_eng_labourparty",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "ParlamentaricRepulic"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_SUFFRAGE",
+      "present": [
+        "BE2_F_ENG_LABOURPARTY",
+        "BE2_F_ENG_PENSIONS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_SUFFRAGE",
+      "icon": "focus_eng_suffrage",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "DirectDemocracy"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Happiness",
+          "Value": 12
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_ENG_TAXREFORM",
+      "present": [
+        "BE2_F_ENG_LABOURPARTY",
+        "BE2_F_ENG_WELFARE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_TAXREFORM",
+      "icon": "focus_eng_taxform",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 0.05
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENG_POLAND",
+      "present": [
+        "BE2_F_ENG_PEACE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_POLAND",
+      "icon": "focus_eng_poland",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Relation",
+          "CivTag": "ger_f",
+          "Relation": -0.1
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_SOVIETPACT",
+      "present": [
+        "BE2_F_ENG_PEACE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_SOVIETPACT",
+      "icon": "focus_eng_sovietpact",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "rus_c",
+          "Relation": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Money",
+          "Value": -300
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_ALLIANCEUS",
+      "present": [
+        "BE2_F_ENG_PEACE",
+        "BE2_F_ENG_POLAND"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENG_ALLIANCEUS",
+      "icon": "focus_eng_allianceus",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "usa",
+          "Relation": 0.3
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENG_ATLANTIC",
+      "present": [
+        "BE2_F_ENG_ALLIANCEUS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_ATLANTIC",
+      "icon": "focus_eng_atlantic",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 80
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.05
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_ENG_UN",
+      "present": [
+        "BE2_F_ENG_ATLANTIC"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_UN",
+      "icon": "focus_eng_un",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.2
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_ENG_CIVILWAR",
+      "present": [
+        "BE2_F_ENG_JUNTA",
+        "BE2_F_ENG_MOBILISATION",
+        "BE2_F_ENG_INDIANFREE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1950,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENG_CIVILWAR",
+      "icon": "focus_eng_civilwar",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "eng_f",
+          "RebelGroup": "eng",
+          "Share": 0.35,
+          "Dominance": 0.45,
+          "Government": "Autocracy",
+          "SouthOf": "London",
+          "Connect": false,
+          "TakeControl": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Stat",
+          "Name": "CapitulationPoints",
+          "Value": 100
+        },
+        {
+          "type": "Happiness",
+          "Value": -20
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 20
+    }
+  ]
+}

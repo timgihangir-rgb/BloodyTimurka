@@ -1,0 +1,1199 @@
+{
+  "name": "eng_f",
+  "CivTag": "eng_f",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_ENGF_PARTY",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_ENGF_PARTY",
+      "icon": "focus_eng_party",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_ENGF_CHARTER",
+      "present": [
+        "BE2_F_ENGF_PARTY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENGF_CHARTER",
+      "icon": "focus_eng_charter",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENGF_PARLIAMENT",
+      "present": [
+        "BE2_F_ENGF_CHARTER"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1956,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_PARLIAMENT",
+      "icon": "focus_eng_parliament",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENGF_ONEPARTY",
+      "present": [
+        "BE2_F_ENGF_PARLIAMENT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1960,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_ONEPARTY",
+      "icon": "focus_eng_oneparty",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_GESTAPO",
+      "present": [
+        "BE2_F_ENGF_ONEPARTY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1964,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_GESTAPO",
+      "icon": "focus_eng_gestapo",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_FOREIGN",
+      "present": [
+        "BE2_F_ENGF_GESTAPO"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1968,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_FOREIGN",
+      "icon": "focus_eng_foreign",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 800
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_CIVILSERVICE",
+      "present": [
+        "BE2_F_ENGF_FOREIGN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1972,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_CIVILSERVICE",
+      "icon": "focus_eng_civilservice",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_ENGF_MILITIA",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_ENGF_MILITIA",
+      "icon": "focus_eng_militia",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 65
+    },
+    {
+      "name": "BE2_F_ENGF_UNIFORM",
+      "present": [
+        "BE2_F_ENGF_MILITIA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENGF_UNIFORM",
+      "icon": "focus_eng_uniform",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 40000
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENGF_CONSCRIPT",
+      "present": [
+        "BE2_F_ENGF_UNIFORM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1956,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_CONSCRIPT",
+      "icon": "focus_eng_conscript",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 300000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -0.05
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENGF_TANKS",
+      "present": [
+        "BE2_F_ENGF_CONSCRIPT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1960,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_TANKS",
+      "icon": "focus_eng_tanks",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Money",
+          "Value": -3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_AIRFORCE",
+      "present": [
+        "BE2_F_ENGF_TANKS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1964,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_AIRFORCE",
+      "icon": "focus_eng_airforce",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Money",
+          "Value": -2500
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.15
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_NAVY",
+      "present": [
+        "BE2_F_ENGF_AIRFORCE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1968,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_NAVY",
+      "icon": "focus_eng_navy",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_ATOM",
+      "present": [
+        "BE2_F_ENGF_NAVY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1972,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_ATOM",
+      "icon": "focus_eng_atom",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": -8000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 3000
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_ENGF_RADIO",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_ENGF_RADIO",
+      "icon": "focus_eng_radio",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_ENGF_PRESS",
+      "present": [
+        "BE2_F_ENGF_RADIO"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENGF_PRESS",
+      "icon": "focus_eng_press",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Happiness",
+          "Value": -4
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENGF_INDUSTRY",
+      "present": [
+        "BE2_F_ENGF_PRESS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1956,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_INDUSTRY",
+      "icon": "focus_eng_industry",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENGF_WHEELS",
+      "present": [
+        "BE2_F_ENGF_INDUSTRY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1960,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_WHEELS",
+      "icon": "focus_eng_wheels",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_FOOD",
+      "present": [
+        "BE2_F_ENGF_WHEELS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1964,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_FOOD",
+      "icon": "focus_eng_food",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 3000
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_AUTARKY",
+      "present": [
+        "BE2_F_ENGF_FOOD"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1968,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_AUTARKY",
+      "icon": "focus_eng_autarky",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 4000
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_LABOURFRONT",
+      "present": [
+        "BE2_F_ENGF_AUTARKY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1972,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_LABOURFRONT",
+      "icon": "focus_eng_labourfront",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_PURGE",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_ENGF_PURGE",
+      "icon": "focus_eng_purge",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -12
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENGF_BROWNSHIRT",
+      "present": [
+        "BE2_F_ENGF_PURGE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENGF_BROWNSHIRT",
+      "icon": "focus_eng_brownshirt",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.15
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_ENGF_SCHOOL",
+      "present": [
+        "BE2_F_ENGF_BROWNSHIRT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1956,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_SCHOOL",
+      "icon": "focus_eng_school",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        },
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": -0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_ENGF_CHURCH",
+      "present": [
+        "BE2_F_ENGF_SCHOOL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1960,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_CHURCH",
+      "icon": "focus_eng_church",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 12
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Money",
+          "Value": 1000
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_TELEVISION",
+      "present": [
+        "BE2_F_ENGF_CHURCH"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1964,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_TELEVISION",
+      "icon": "focus_eng_television",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 6
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_MUSEUM",
+      "present": [
+        "BE2_F_ENGF_TELEVISION"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1968,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_MUSEUM",
+      "icon": "focus_eng_museum",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.07
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_RACE",
+      "present": [
+        "BE2_F_ENGF_MUSEUM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1972,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_RACE",
+      "icon": "focus_eng_race",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -18
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_ENGF_DEFENCE",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_ENGF_DEFENCE",
+      "icon": "focus_eng_defence",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_ENGF_CORNWALL",
+      "present": [
+        "BE2_F_ENGF_DEFENCE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_ENGF_CORNWALL",
+      "icon": "focus_eng_cornwall",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENGF_COAST",
+      "present": [
+        "BE2_F_ENGF_CORNWALL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1956,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_COAST",
+      "icon": "focus_eng_coast",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_ENGF_LONDON",
+      "present": [
+        "BE2_F_ENGF_COAST"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1960,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_LONDON",
+      "icon": "focus_eng_london",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -12
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_ENGF_WALES",
+      "present": [
+        "BE2_F_ENGF_LONDON"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1964,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_WALES",
+      "icon": "focus_eng_wales",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_SCOTLAND",
+      "present": [
+        "BE2_F_ENGF_WALES"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1968,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_SCOTLAND",
+      "icon": "focus_eng_scotland",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1800
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_ENGF_ISLANDS",
+      "present": [
+        "BE2_F_ENGF_SCOTLAND"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1972,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_ENGF_ISLANDS",
+      "icon": "focus_eng_islands",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 35
+    }
+  ]
+}

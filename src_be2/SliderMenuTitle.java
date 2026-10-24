@@ -1,0 +1,79 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package age.of.civilizations2.jakowski.lukasz;
+
+import age.of.civilizations2.jakowski.lukasz.CFG;
+import age.of.civilizations2.jakowski.lukasz.ImageManager;
+import age.of.civilizations2.jakowski.lukasz.Images;
+import com.badlogic.gdx.graphics.Color;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+
+public class SliderMenuTitle {
+    public String sText;
+    public int iTextWidth = -1;
+    public int iTextHeight = -1;
+    public int iHeight;
+    public boolean moveable = false;
+    public boolean resizable = false;
+
+    public SliderMenuTitle(String sText, int iHeight, boolean moveable, boolean resizable) {
+        this.setText(sText);
+        this.iHeight = iHeight;
+        this.moveable = moveable;
+        this.resizable = resizable;
+    }
+
+    public void draw(SpriteBatch oSB, int iTranslateX, int nPosX, int nPosY, int nWidth, boolean sliderMenuIsActive) {
+        ImageManager.getImage(Images.title_edge).draw2(oSB, nPosX + nWidth - ImageManager.getImage(Images.title_edge).getWidth() + iTranslateX, nPosY - ImageManager.getImage(Images.title_edge).getHeight() - this.iHeight, ImageManager.getImage(Images.title_edge).getWidth(), this.iHeight, true, true);
+        ImageManager.getImage(Images.title_edge).draw2(oSB, nPosX + iTranslateX, nPosY - ImageManager.getImage(Images.title_edge).getHeight() - this.iHeight, nWidth - ImageManager.getImage(Images.title_edge).getWidth(), this.iHeight, false, true);
+        this.drawText(oSB, iTranslateX, nPosX, nPosY, nWidth, sliderMenuIsActive);
+    }
+
+    public void drawText(SpriteBatch oSB, int iTranslateX, int nPosX, int nPosY, int nWidth, boolean sliderMenuIsActive) {
+        CFG.drawText(oSB, this.sText, nPosX + nWidth / 2 - this.iTextWidth / 2 + iTranslateX, nPosY - this.iHeight + this.iHeight / 2 - this.iTextHeight / 2, new Color(0.92941177f, 0.99607843f, 1.0f, 1.0f));
+    }
+
+    public final String getText() {
+        return this.sText;
+    }
+
+    public final void setText(String sText) {
+        this.sText = sText;
+        this.setTextWidth(-1);
+        if (sText != null && this.getTextWidth() < 0) {
+            CFG.glyphLayout.setText(CFG.fontMain, sText);
+            this.setTextWidth((int)CFG.glyphLayout.width);
+            this.setTextHeight((int)CFG.glyphLayout.height);
+        }
+    }
+
+    public final int getHeight() {
+        return this.iHeight;
+    }
+
+    public final boolean getMoveable() {
+        return this.moveable;
+    }
+
+    public final int getTextWidth() {
+        return this.iTextWidth;
+    }
+
+    public final int getTextHeight() {
+        return this.iTextHeight;
+    }
+
+    public final void setTextWidth(int iTextWidth) {
+        this.iTextWidth = iTextWidth;
+    }
+
+    public final void setTextHeight(int iTextHeight) {
+        this.iTextHeight = iTextHeight;
+    }
+
+    public final boolean getResizable() {
+        return this.resizable;
+    }
+}
+

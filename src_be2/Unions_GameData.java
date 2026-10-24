@@ -1,0 +1,19 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package age.of.civilizations2.jakowski.lukasz;
+
+import age.of.civilizations2.jakowski.lukasz.Union_GameData;
+import java.io.Serializable;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Unions_GameData
+implements Serializable {
+    public static final long serialVersionUID = 0L;
+    public List<Union_GameData> lUnions = new ArrayList<Union_GameData>();
+
+    Unions_GameData() {
+    }
+}
+

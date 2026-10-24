@@ -1,0 +1,1836 @@
+{
+  "name": "Рейх",
+  "CivTag": "ger_f",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_GER_MOB",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GER_MOB",
+      "icon": "focus_ger_mob",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GER_RUSTUNG",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GER_RUSTUNG",
+      "icon": "focus_ger_rustung",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -700
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GER_WHR",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GER_WHR",
+      "icon": "focus_ger_whr",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_LUFT",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GER_LUFT",
+      "icon": "focus_ger_luft",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_EINVOLK",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GER_EINVOLK",
+      "icon": "focus_ger_einvolk",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "Bonapartism"
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 1000000
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_AUTARKY",
+      "present": [
+        "BE2_F_GER_RUSTUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_AUTARKY",
+      "icon": "focus_ger_autarky",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": -0.1,
+          "Turns": 80
+        },
+        {
+          "type": "Money",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_INDUSTRY",
+      "present": [
+        "BE2_F_GER_RUSTUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_INDUSTRY",
+      "icon": "focus_ger_industry",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.3,
+          "Turns": 80
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GER_TOT",
+      "present": [
+        "BE2_F_GER_MOB"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_TOT",
+      "icon": "focus_ger_tot",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 1200
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_RASTERFARM",
+      "present": [
+        "BE2_F_GER_TOT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_RASTERFARM",
+      "icon": "focus_ger_rasterfarm",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 3000
+        },
+        {
+          "type": "Money",
+          "Value": 1000
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_ERDUNG",
+      "present": [
+        "BE2_F_GER_TOT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_ERDUNG",
+      "icon": "focus_ger_erding",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 120000
+        },
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_ATOM",
+      "present": [
+        "BE2_F_GER_RUSTUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_ATOM",
+      "icon": "focus_ger_atom",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1500
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_BOMB",
+      "present": [
+        "BE2_F_GER_ATOM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_BOMB",
+      "icon": "focus_ger_bomb",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 2
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_GER_JETS",
+      "present": [
+        "BE2_F_GER_RUSTUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_JETS",
+      "icon": "focus_ger_jets",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_RUHR",
+      "present": [
+        "BE2_F_GER_AUTARKY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_RUHR",
+      "icon": "focus_ger_ruhr",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_VOLKSWAGEN",
+      "present": [
+        "BE2_F_GER_INDUSTRY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_VOLKSWAGEN",
+      "icon": "focus_ger_volkswagen",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_BLITZ",
+      "present": [
+        "BE2_F_GER_WHR",
+        "BE2_F_GER_RUSTUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_BLITZ",
+      "icon": "focus_ger_blitz",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 40000
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_WAFFENSS",
+      "present": [
+        "BE2_F_GER_TOT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_WAFFENSS",
+      "icon": "focus_ger_waffenss",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.2,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_UBOAT",
+      "present": [
+        "BE2_F_GER_INDUSTRY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_UBOAT",
+      "icon": "focus_ger_uboat",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 50
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_ATLAS",
+      "present": [
+        "BE2_F_GER_WHR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_ATLAS",
+      "icon": "focus_ger_atlas",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_ATLANTIS",
+      "present": [
+        "BE2_F_GER_UBOAT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_ATLANTIS",
+      "icon": "focus_ger_atlantis",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GER_RHEIN",
+      "present": [
+        "BE2_F_GER_EINVOLK"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1936,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_RHEIN",
+      "icon": "focus_ger_rhein",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 40000
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Relation",
+          "CivTag": "fra",
+          "Relation": -0.35
+        },
+        {
+          "type": "Relation",
+          "CivTag": "eng",
+          "Relation": -0.35
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        },
+        {
+          "type": "Money",
+          "Value": -300
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_ANSCHLUSS",
+      "present": [
+        "BE2_F_GER_RHEIN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1938,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_ANSCHLUSS",
+      "icon": "focus_ger_anschluss",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "atr",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 7000000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.05
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GER_SUDETY",
+      "present": [
+        "BE2_F_GER_RHEIN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1938,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_SUDETY",
+      "icon": "focus_ger_sudety",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "czsl",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 3000000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Money",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GER_MEMEL",
+      "present": [
+        "BE2_F_GER_SUDETY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_MEMEL",
+      "icon": "focus_ger_memel",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "lit",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Money",
+          "Value": 500
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        },
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GER_MOLOTOV",
+      "present": [
+        "BE2_F_GER_EINVOLK"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_MOLOTOV",
+      "icon": "focus_ger_molotov",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "rus_c"
+        },
+        {
+          "type": "NonAggression",
+          "CivTag": "rus_c",
+          "Turns": 40
+        },
+        {
+          "type": "Relation",
+          "CivTag": "rus_c",
+          "Relation": 0.3
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_DANZIG",
+      "present": [
+        "BE2_F_GER_MOLOTOV"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_DANZIG",
+      "icon": "focus_ger_danzig",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "fcd",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_FRANCE",
+      "present": [
+        "BE2_F_GER_BLITZ",
+        "BE2_F_GER_TOT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_FRANCE",
+      "icon": "focus_ger_france",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "fra",
+          "Provinces": 3,
+          "Share": 0.1,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 20000000
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_WESTWALL",
+      "present": [
+        "BE2_F_GER_FRANCE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_WESTWALL",
+      "icon": "focus_ger_westwall",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.35,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Money",
+          "Value": -1200
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_BARBAROSSA",
+      "present": [
+        "BE2_F_GER_MOLOTOV",
+        "BE2_F_GER_BLITZ"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_BARBAROSSA",
+      "icon": "focus_ger_barbarossa",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.3,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 500000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 3000
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_OST",
+      "present": [
+        "BE2_F_GER_MOB"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_OST",
+      "icon": "focus_ger_ost",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 3,
+          "Share": 0.05,
+          "War": true
+        },
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 15000000
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -20
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_MOSCOW",
+      "present": [
+        "BE2_F_GER_BARBAROSSA",
+        "BE2_F_GER_GREATER"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1942,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_MOSCOW",
+      "icon": "focus_ger_moscow",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 300000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 50
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_GREATER",
+      "present": [
+        "BE2_F_GER_OST",
+        "BE2_F_GER_BLITZ"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_GREATER",
+      "icon": "focus_ger_greater",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.05,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 10000000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GER_AXIS",
+      "present": [
+        "BE2_F_GER_BLITZ"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_AXIS",
+      "icon": "focus_ger_axis",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "ita"
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_TRIPARTITE",
+      "present": [
+        "BE2_F_GER_AXIS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_TRIPARTITE",
+      "icon": "focus_ger_tripartite",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "ita"
+        },
+        {
+          "type": "Alliance",
+          "CivTag": "jap"
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GER_NUCLEAR",
+      "present": [
+        "BE2_F_GER_BOMB",
+        "BE2_F_GER_BLITZ"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_NUCLEAR",
+      "icon": "focus_ger_nuclear",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 40
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_GER_CIVILWAR",
+      "present": [
+        "BE2_F_GER_BARBAROSSA",
+        "BE2_F_GER_WESTWALL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1943,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_CIVILWAR",
+      "icon": "focus_ger_civilwar",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "ger_n",
+          "RebelGroup": "ger",
+          "Share": 0.4,
+          "Dominance": 0.45,
+          "Government": "ConstuntionalMonarchy",
+          "From": "west",
+          "Band": 0.65,
+          "TakeControl": true
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GER_AUTOBAN",
+      "present": [
+        "BE2_F_GER_WHR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_AUTOBAN",
+      "icon": "focus_ger_autoban",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Money",
+          "Value": -200
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_LABORFRONT",
+      "present": [
+        "BE2_F_GER_TOT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_LABORFRONT",
+      "icon": "focus_ger_laborfront",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GER_PANZER",
+      "present": [
+        "BE2_F_GER_BLITZ"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_PANZER",
+      "icon": "focus_ger_panzer",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GER_FLAK",
+      "present": [
+        "BE2_F_GER_WESTWALL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_FLAK",
+      "icon": "focus_ger_flak",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 30000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GER_ROCKET",
+      "present": [
+        "BE2_F_GER_ATOM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_ROCKET",
+      "icon": "focus_ger_rocket",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 300
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GER_V2",
+      "present": [
+        "BE2_F_GER_ROCKET"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_V2",
+      "icon": "focus_ger_v2",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GER_BULGAR",
+      "present": [
+        "BE2_F_GER_DANZIG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_BULGAR",
+      "icon": "focus_ger_bulgar",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "bul"
+        },
+        {
+          "type": "Relation",
+          "CivTag": "bul",
+          "Relation": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 65
+    },
+    {
+      "name": "BE2_F_GER_HUNGAR",
+      "present": [
+        "BE2_F_GER_DANZIG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_HUNGAR",
+      "icon": "focus_ger_hungar",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "hun"
+        },
+        {
+          "type": "Relation",
+          "CivTag": "hun",
+          "Relation": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 65
+    },
+    {
+      "name": "BE2_F_GER_ROUMANIA",
+      "present": [
+        "BE2_F_GER_DANZIG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_ROUMANIA",
+      "icon": "focus_ger_roumania",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "rom"
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 65
+    },
+    {
+      "name": "BE2_F_GER_FINLAND",
+      "present": [
+        "BE2_F_GER_BARBAROSSA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_FINLAND",
+      "icon": "focus_ger_finland",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "fin"
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GER_OSTLAND",
+      "present": [
+        "BE2_F_GER_GREATER"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_OSTLAND",
+      "icon": "focus_ger_ostland",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GER_AFRIKA",
+      "present": [
+        "BE2_F_GER_ATLANTIS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_AFRIKA",
+      "icon": "focus_ger_afrika",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 250
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GER_VOLKSSTURM",
+      "present": [
+        "BE2_F_GER_MOSCOW"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_VOLKSSTURM",
+      "icon": "focus_ger_volkssturm",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 120000
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GER_TOTALWAR",
+      "present": [
+        "BE2_F_GER_MOSCOW"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GER_TOTALWAR",
+      "icon": "focus_ger_totalwar",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GER_POLEN",
+      "present": [
+        "BE2_F_GER_DANZIG"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_POLEN",
+      "icon": "focus_ger_polen",
+      "effect": [
+        {
+          "type": "War",
+          "CivTag": "pol"
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "pol",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Money",
+          "Value": 800
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GER_BOHEMIA",
+      "present": [
+        "BE2_F_GER_SUDETY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_BOHEMIA",
+      "icon": "focus_ger_bohemia",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "czsl",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 120000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GER_PETROGRAD",
+      "present": [
+        "BE2_F_GER_BARBAROSSA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1942,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_PETROGRAD",
+      "icon": "focus_ger_petrograd",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "rus_c",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 50
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_CAUCASUS",
+      "present": [
+        "BE2_F_GER_MOSCOW"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1942,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_CAUCASUS",
+      "icon": "focus_ger_caucasus",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "rus_c",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GER_WESER",
+      "present": [
+        "BE2_F_GER_POLEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GER_WESER",
+      "icon": "focus_ger_weser",
+      "effect": [
+        {
+          "type": "War",
+          "CivTag": "den"
+        },
+        {
+          "type": "War",
+          "CivTag": "nor"
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "den",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 40
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 40
+    }
+  ]
+}

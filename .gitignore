@@ -1,0 +1,4 @@
+classes/
+hs_err*
+*.log
+/tmp

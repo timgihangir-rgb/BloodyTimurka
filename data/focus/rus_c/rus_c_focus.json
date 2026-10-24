@@ -1,0 +1,1647 @@
+{
+  "name": "СССР",
+  "CivTag": "rus_c",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_RUS_PLAN5",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUS_PLAN5",
+      "icon": "focus_rus_plan5",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_MOB",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUS_MOB",
+      "icon": "focus_rus_mob",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUS_PURGE",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUS_PURGE",
+      "icon": "focus_rus_purge",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_PACT",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUS_PACT",
+      "icon": "focus_rus_pact",
+      "effect": [
+        {
+          "type": "NonAggression",
+          "CivTag": "ger_f",
+          "Turns": 40
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_SPY",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_RUS_SPY",
+      "icon": "focus_rus_spy",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 40
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_HEAVY",
+      "present": [
+        "BE2_F_RUS_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_HEAVY",
+      "icon": "focus_rus_heavy",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUS_URALS",
+      "present": [
+        "BE2_F_RUS_HEAVY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_URALS",
+      "icon": "focus_rus_urals",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_KOLLECT",
+      "present": [
+        "BE2_F_RUS_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_KOLLECT",
+      "icon": "focus_rus_kollect",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 5000
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": -15
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_RAIL",
+      "present": [
+        "BE2_F_RUS_HEAVY",
+        "BE2_F_RUS_KOLLECT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_RAIL",
+      "icon": "focus_rus_rail",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_ATOM",
+      "present": [
+        "BE2_F_RUS_HEAVY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_ATOM",
+      "icon": "focus_rus_atom",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1800
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_BOMB",
+      "present": [
+        "BE2_F_RUS_ATOM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_BOMB",
+      "icon": "focus_rus_bomb",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 2
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_RUS_TRACTORS",
+      "present": [
+        "BE2_F_RUS_HEAVY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_TRACTORS",
+      "icon": "focus_rus_tractors",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUS_SVALOV",
+      "present": [
+        "BE2_F_RUS_URALS",
+        "BE2_F_RUS_HEAVY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_SVALOV",
+      "icon": "focus_rus_svalov",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Money",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUS_AVIATION",
+      "present": [
+        "BE2_F_RUS_URALS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_AVIATION",
+      "icon": "focus_rus_aviation",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_REFORM",
+      "present": [
+        "BE2_F_RUS_MOB"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_REFORM",
+      "icon": "focus_rus_reform",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUS_MECH",
+      "present": [
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_MECH",
+      "icon": "focus_rus_mech",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_SPECNAZ",
+      "present": [
+        "BE2_F_RUS_SPY",
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_SPECNAZ",
+      "icon": "focus_rus_specnaz",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 50
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUS_PARADE",
+      "present": [
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1937,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_PARADE",
+      "icon": "focus_rus_parade",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 15
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_GULAG",
+      "present": [
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_GULAG",
+      "icon": "focus_rus_gulag",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 3
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": -0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -15
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_RUS_OFFICERS",
+      "present": [
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_OFFICERS",
+      "icon": "focus_rus_officers",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUS_NKVD",
+      "present": [
+        "BE2_F_RUS_PURGE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_NKVD",
+      "icon": "focus_rus_nkvd",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Happiness",
+          "Value": -20
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_COMINTERN",
+      "present": [
+        "BE2_F_RUS_PURGE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_COMINTERN",
+      "icon": "focus_rus_comintern",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_PROPAGANDA",
+      "present": [
+        "BE2_F_RUS_COMINTERN"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_PROPAGANDA",
+      "icon": "focus_rus_propaganda",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.15,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_RUS_CULT",
+      "present": [
+        "BE2_F_RUS_COMINTERN",
+        "BE2_F_RUS_SPY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_CULT",
+      "icon": "focus_rus_cult",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_SOVNARKOM",
+      "present": [
+        "BE2_F_RUS_NKVD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_SOVNARKOM",
+      "icon": "focus_rus_sovnarcom",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_WAR",
+      "present": [
+        "BE2_F_RUS_REFORM",
+        "BE2_F_RUS_PACT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_WAR",
+      "icon": "focus_rus_war",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 500000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": -15
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUS_DEFENCE",
+      "present": [
+        "BE2_F_RUS_REFORM",
+        "BE2_F_RUS_MOB"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_DEFENCE",
+      "icon": "focus_rus_defence",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.35,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Money",
+          "Value": -1000
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_MOSCOW",
+      "present": [
+        "BE2_F_RUS_DEFENCE",
+        "BE2_F_RUS_WAR"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_MOSCOW",
+      "icon": "focus_rus_moscow",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 50
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_STALINGRAD",
+      "present": [
+        "BE2_F_RUS_MOSCOW",
+        "BE2_F_RUS_MECH"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1942,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_STALINGRAD",
+      "icon": "focus_rus_stalingrad",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 300000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_WINTER",
+      "present": [
+        "BE2_F_RUS_PACT",
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_WINTER",
+      "icon": "focus_rus_winter",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Money",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_BALTIC",
+      "present": [
+        "BE2_F_RUS_PACT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_BALTIC",
+      "icon": "focus_rus_baltic",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "est",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "lat",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "lit",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 4000000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUS_RECONQUEST",
+      "present": [
+        "BE2_F_RUS_WAR",
+        "BE2_F_RUS_URALS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_RECONQUEST",
+      "icon": "focus_rus_reconquest",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 40
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_UKRAINE",
+      "present": [
+        "BE2_F_RUS_RECONQUEST"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_UKRAINE",
+      "icon": "focus_rus_ukraine",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "ger_f",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_EMPIRE",
+      "present": [
+        "BE2_F_RUS_RECONQUEST",
+        "BE2_F_RUS_COMINTERN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_EMPIRE",
+      "icon": "focus_rus_empire",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 8000000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUS_OTTEPEL",
+      "present": [
+        "BE2_F_RUS_EMPIRE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1946,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_OTTEPEL",
+      "icon": "focus_rus_ottepel",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 20
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUS_SPACE",
+      "present": [
+        "BE2_F_RUS_OTTEPEL",
+        "BE2_F_RUS_ATOM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1950,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_SPACE",
+      "icon": "focus_rus_space",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.35,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 3
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_RUS_CIVILWAR",
+      "present": [
+        "BE2_F_RUS_RECONQUEST",
+        "BE2_F_RUS_SOVNARKOM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1946,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_CIVILWAR",
+      "icon": "focus_rus_civilwar",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "rus_i",
+          "RebelGroup": "rus",
+          "Share": 0.3,
+          "Dominance": 0.45,
+          "Government": "PresidentalRepublic",
+          "Cities": [
+            "Moscow",
+            "Saint Petersburg",
+            "Volgograd"
+          ],
+          "Connect": true,
+          "Disconnected": true,
+          "TakeControl": true
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_RUS_MOLOTOV",
+      "present": [
+        "BE2_F_RUS_PACT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_MOLOTOV",
+      "icon": "focus_rus_molotov",
+      "effect": [
+        {
+          "type": "Alliance",
+          "CivTag": "ger_f"
+        },
+        {
+          "type": "Relation",
+          "CivTag": "ger_f",
+          "Relation": 0.3
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 65
+    },
+    {
+      "name": "BE2_F_RUS_POLAND",
+      "present": [
+        "BE2_F_RUS_MOLOTOV"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_POLAND",
+      "icon": "focus_rus_poland",
+      "effect": [
+        {
+          "type": "War",
+          "CivTag": "pol"
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "pol",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_KAVKAZ",
+      "present": [
+        "BE2_F_RUS_WAR"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1943,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_RUS_KAVKAZ",
+      "icon": "focus_rus_kavkaz",
+      "effect": [
+        {
+          "type": "War",
+          "CivTag": "tur"
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "tur",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": false
+        },
+        {
+          "type": "Money",
+          "Value": 1200
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 50
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUS_SIBERIA",
+      "present": [
+        "BE2_F_RUS_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_SIBERIA",
+      "icon": "focus_rus_siberia",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUS_TANKOGRAD",
+      "present": [
+        "BE2_F_RUS_HEAVY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_TANKOGRAD",
+      "icon": "focus_rus_tankograd",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_ZHUKOV",
+      "present": [
+        "BE2_F_RUS_REFORM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_ZHUKOV",
+      "icon": "focus_rus_zhukov",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.1,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_KATYUSHA",
+      "present": [
+        "BE2_F_RUS_MECH"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_KATYUSHA",
+      "icon": "focus_rus_katyusha",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.12,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 250
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUS_FAREAST",
+      "present": [
+        "BE2_F_RUS_SPY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_FAREAST",
+      "icon": "focus_rus_fareast",
+      "effect": [
+        {
+          "type": "NonAggression",
+          "CivTag": "jap",
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.1,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_FINLAND",
+      "present": [
+        "BE2_F_RUS_WINTER"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_FINLAND",
+      "icon": "focus_rus_finland",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "fin",
+          "Provinces": 2
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": -50
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 65
+    },
+    {
+      "name": "BE2_F_RUS_BESSARABIA",
+      "present": [
+        "BE2_F_RUS_BALTIC"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_BESSARABIA",
+      "icon": "focus_rus_bessarabia",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "rom",
+          "Provinces": 2
+        },
+        {
+          "type": "Money",
+          "Value": 150
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_BERLIN",
+      "present": [
+        "BE2_F_RUS_RECONQUEST"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_BERLIN",
+      "icon": "focus_rus_berlin",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_ATOMBOMB",
+      "present": [
+        "BE2_F_RUS_BOMB"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_ATOMBOMB",
+      "icon": "focus_rus_atombomb",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1500
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUS_COSMONAUT",
+      "present": [
+        "BE2_F_RUS_SPACE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_COSMONAUT",
+      "icon": "focus_rus_cosmonaut",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 15
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUS_TOTAL",
+      "present": [
+        "BE2_F_RUS_WAR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_TOTAL",
+      "icon": "focus_rus_total",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUS_STURMOVIK",
+      "present": [
+        "BE2_F_RUS_AVIATION"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_STURMOVIK",
+      "icon": "focus_rus_sturmovik",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUS_DIVISIONS",
+      "present": [
+        "BE2_F_RUS_MOB"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUS_DIVISIONS",
+      "icon": "focus_rus_divisions",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.15,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 55
+    }
+  ]
+}

@@ -1,0 +1,830 @@
+{
+  "name": "rus_q",
+  "CivTag": "rus_q",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_RUSQ_UCHREDITELNOYE",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "rus_i"
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_UCHREDITELNOYE",
+      "icon": "focus_rus_q_uchreditelnoye",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_RUSQ_KONSTITUTSIYA",
+      "present": [
+        "BE2_F_RUSQ_UCHREDITELNOYE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSQ_KONSTITUTSIYA",
+      "icon": "focus_rus_q_konstitutsiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSQ_PREZIDENT",
+      "present": [
+        "BE2_F_RUSQ_KONSTITUTSIYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_PREZIDENT",
+      "icon": "focus_rus_q_prezident",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_PARLAMENT",
+      "present": [
+        "BE2_F_RUSQ_PREZIDENT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_PARLAMENT",
+      "icon": "focus_rus_q_parlament",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": -0.1
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSQ_STABILIZATSIYA",
+      "present": [
+        "BE2_F_RUSQ_PARLAMENT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_STABILIZATSIYA",
+      "icon": "focus_rus_q_stabilizatsiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_RUSQ_PORTY",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "rus_i"
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_PORTY",
+      "icon": "focus_rus_q_porty",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1500
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSQ_ZHELEZNICA",
+      "present": [
+        "BE2_F_RUSQ_PORTY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSQ_ZHELEZNICA",
+      "icon": "focus_rus_q_zheleznica",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSQ_UGOL",
+      "present": [
+        "BE2_F_RUSQ_ZHELEZNICA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_UGOL",
+      "icon": "focus_rus_q_ugol",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_PROMYSHLENNOST",
+      "present": [
+        "BE2_F_RUSQ_UGOL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_PROMYSHLENNOST",
+      "icon": "focus_rus_q_promyshlennost",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSQ_TEPLIFIKATSIYA",
+      "present": [
+        "BE2_F_RUSQ_PROMYSHLENNOST"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_TEPLIFIKATSIYA",
+      "icon": "focus_rus_q_teplifikatsiya",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUSQ_OPONENTS",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "rus_i"
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_OPONENTS",
+      "icon": "focus_rus_q_oponents",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_PRIZYV",
+      "present": [
+        "BE2_F_RUSQ_OPONENTS"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSQ_PRIZYV",
+      "icon": "focus_rus_q_prizyv",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_MEKHANIZATSIYA",
+      "present": [
+        "BE2_F_RUSQ_PRIZYV"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_MEKHANIZATSIYA",
+      "icon": "focus_rus_q_mekhanizatsiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1800
+        },
+        {
+          "type": "Money",
+          "Value": -3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSQ_AVIATSIYA",
+      "present": [
+        "BE2_F_RUSQ_MEKHANIZATSIYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_AVIATSIYA",
+      "icon": "focus_rus_q_aviatsiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Money",
+          "Value": -2500
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUSQ_FRONT",
+      "present": [
+        "BE2_F_RUSQ_AVIATSIYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_FRONT",
+      "icon": "focus_rus_q_front",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 250000
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUSQ_GIMNAZIYA",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "rus_i"
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_GIMNAZIYA",
+      "icon": "focus_rus_q_gimnaziya",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_UNIVERSITET",
+      "present": [
+        "BE2_F_RUSQ_GIMNAZIYA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSQ_UNIVERSITET",
+      "icon": "focus_rus_q_universitet",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSQ_PRESSA",
+      "present": [
+        "BE2_F_RUSQ_UNIVERSITET"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_PRESSA",
+      "icon": "focus_rus_q_pressa",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSQ_KULTURA",
+      "present": [
+        "BE2_F_RUSQ_PRESSA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_KULTURA",
+      "icon": "focus_rus_q_kultura",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_RUSQ_IDEOLOGIYA",
+      "present": [
+        "BE2_F_RUSQ_KULTURA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_IDEOLOGIYA",
+      "icon": "focus_rus_q_ideologiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -12
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_RUSQ_ZAPAD",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "rus_i"
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_ZAPAD",
+      "icon": "focus_rus_q_zapad",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1000
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_RUSQ_BALTIKA",
+      "present": [
+        "BE2_F_RUSQ_ZAPAD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_RUSQ_BALTIKA",
+      "icon": "focus_rus_q_baltika",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_SMOLENSK",
+      "present": [
+        "BE2_F_RUSQ_BALTIKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_SMOLENSK",
+      "icon": "focus_rus_q_smolensk",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_RUSQ_MOSKOVSKAYA",
+      "present": [
+        "BE2_F_RUSQ_SMOLENSK"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_MOSKOVSKAYA",
+      "icon": "focus_rus_q_moskovskaya",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1400
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_RUSQ_VOSSOEDINENIE",
+      "present": [
+        "BE2_F_RUSQ_MOSKOVSKAYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_RUSQ_VOSSOEDINENIE",
+      "icon": "focus_rus_q_vossoedinenie",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2200
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 30
+    }
+  ]
+}

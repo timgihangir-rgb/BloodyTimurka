@@ -1,0 +1,1147 @@
+{
+  "name": "Югославия",
+  "CivTag": "yugo",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_YUGO_PLAN5",
+      "present": [],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1938
+        }
+      ],
+      "describe": "BE2_FD_YUGO_PLAN5",
+      "icon": "focus_yugo_plan5",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 120000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_YUGO_VOJSKA",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_VOJSKA",
+      "icon": "focus_yugo_vojska",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 450
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_YUGO_GRAD",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_GRAD",
+      "icon": "focus_yugo_grad",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Money",
+          "Value": -300
+        },
+        {
+          "type": "Happiness",
+          "Value": 4
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_JEDINSTVO",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_JEDINSTVO",
+      "icon": "focus_yugo_jedinstvo",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.35
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": -0.1
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_YUGO_NAUKA",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_NAUKA",
+      "icon": "focus_yugo_nauka",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 250
+        },
+        {
+          "type": "Money",
+          "Value": -350
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_PETNOL",
+      "present": [
+        "BE2_F_YUGO_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_PETNOL",
+      "icon": "focus_yugo_petnol",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_STAL",
+      "present": [
+        "BE2_F_YUGO_PETNOL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_STAL",
+      "icon": "focus_yugo_stal",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 90000
+        },
+        {
+          "type": "Money",
+          "Value": -700
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_ELEKTRO",
+      "present": [
+        "BE2_F_YUGO_STAL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_ELEKTRO",
+      "icon": "focus_yugo_elektro",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_ZELEZNICA",
+      "present": [
+        "BE2_F_YUGO_GRAD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_ZELEZNICA",
+      "icon": "focus_yugo_zeleznica",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 0.15
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_YUGO_PORT",
+      "present": [
+        "BE2_F_YUGO_ZELEZNICA",
+        "BE2_F_YUGO_ELEKTRO"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_PORT",
+      "icon": "focus_yugo_port",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 350
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": 700
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_POLOPRIM",
+      "present": [
+        "BE2_F_YUGO_PETNOL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_POLOPRIM",
+      "icon": "focus_yugo_poloprim",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 250000
+        },
+        {
+          "type": "Happiness",
+          "Value": 3
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_VOJSKA_TECH",
+      "present": [
+        "BE2_F_YUGO_VOJSKA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_VOJSKA_TECH",
+      "icon": "focus_yugo_vojska_tech",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_BRONI",
+      "present": [
+        "BE2_F_YUGO_VOJSKA_TECH"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_BRONI",
+      "icon": "focus_yugo_broni",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Money",
+          "Value": -700
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_BRZDL",
+      "present": [
+        "BE2_F_YUGO_BRONI"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_BRZDL",
+      "icon": "focus_yugo_brzdl",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 3
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 450
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_AVIACIJA",
+      "present": [
+        "BE2_F_YUGO_VOJSKA_TECH"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_AVIACIJA",
+      "icon": "focus_yugo_aviacija",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 350
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_FLOTA",
+      "present": [
+        "BE2_F_YUGO_PORT",
+        "BE2_F_YUGO_BRONI"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_FLOTA",
+      "icon": "focus_yugo_flota",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_USTAV",
+      "present": [
+        "BE2_F_YUGO_JEDINSTVO"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_USTAV",
+      "icon": "focus_yugo_ustav",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_YUGO_SABOR",
+      "present": [
+        "BE2_F_YUGO_USTAV"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_SABOR",
+      "icon": "focus_yugo_sabor",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 50
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_SUD",
+      "present": [
+        "BE2_F_YUGO_SABOR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_SUD",
+      "icon": "focus_yugo_sud",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 40
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_PARTIJA",
+      "present": [
+        "BE2_F_YUGO_SABOR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_PARTIJA",
+      "icon": "focus_yugo_partija",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Happiness",
+          "Value": -4
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_PROFSOYU",
+      "present": [
+        "BE2_F_YUGO_PARTIJA",
+        "BE2_F_YUGO_STAL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_PROFSOYU",
+      "icon": "focus_yugo_profsoyu",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -3
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_ZAPAD",
+      "present": [
+        "BE2_F_YUGO_USTAV"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_ZAPAD",
+      "icon": "focus_yugo_zapad",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_YUGO_VOSTOK",
+      "present": [
+        "BE2_F_YUGO_BRONI"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_VOSTOK",
+      "icon": "focus_yugo_vostok",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 350
+        },
+        {
+          "type": "Happiness",
+          "Value": -3
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_BALKAN",
+      "present": [
+        "BE2_F_YUGO_ZAPAD",
+        "BE2_F_YUGO_SUD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_BALKAN",
+      "icon": "focus_yugo_balkan",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_OS",
+      "present": [
+        "BE2_F_YUGO_ZAPAD"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1940
+        }
+      ],
+      "describe": "BE2_FD_YUGO_OS",
+      "icon": "focus_yugo_os",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "ger_f",
+          "Relation": 0.45
+        },
+        {
+          "type": "Relation",
+          "CivTag": "ita",
+          "Relation": 0.3
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -35
+        },
+        {
+          "type": "CivilWar",
+          "NewCivTag": "yugo_d",
+          "RebelGroup": "yugo",
+          "Government": "DirectDemocracy",
+          "Cities": [
+            "Skopje",
+            "Nis",
+            "Prishtina",
+            "Bitola"
+          ],
+          "Connect": true,
+          "TakeControl": true
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_YUGO_ALBANIA",
+      "present": [
+        "BE2_F_YUGO_BALKAN"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_ALBANIA",
+      "icon": "focus_yugo_albania",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "alb2",
+          "Provinces": 99,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Annexation",
+          "CivTag": "alb",
+          "Provinces": 99,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -30
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_RAZVAL",
+      "present": [
+        "BE2_F_YUGO_KONSTITUTSIYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1948
+        }
+      ],
+      "describe": "BE2_FD_YUGO_RAZVAL",
+      "icon": "focus_yugo_razval",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "slv_n",
+          "RebelGroup": "yugo",
+          "Government": "ConstuntionalMonarchy",
+          "From": "north",
+          "Band": 0.2,
+          "TakeControl": false
+        },
+        {
+          "type": "CivilWar",
+          "NewCivTag": "cro_n",
+          "RebelGroup": "yugo",
+          "Government": "ConstuntionalMonarchy",
+          "From": "west",
+          "Band": 0.35,
+          "TakeControl": false
+        },
+        {
+          "type": "CivilWar",
+          "NewCivTag": "mon_f",
+          "RebelGroup": "yugo",
+          "Government": "Autocracy",
+          "From": "south",
+          "Band": 0.25,
+          "TakeControl": false
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -80
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_YUGO_VYSELID",
+      "present": [
+        "BE2_F_YUGO_GRAD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_VYSELID",
+      "icon": "focus_yugo_vyselid",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 300000
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_KONSTITUTSIYA",
+      "present": [
+        "BE2_F_YUGO_USTAV",
+        "BE2_F_YUGO_SABOR"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1946
+        }
+      ],
+      "describe": "BE2_FD_YUGO_KONSTITUTSIYA",
+      "icon": "focus_yugo_konstitutsiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_VOEN_REVOL",
+      "present": [
+        "BE2_F_YUGO_PARTIJA",
+        "BE2_F_YUGO_BRONI",
+        "BE2_F_YUGO_FLOTA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1941
+        }
+      ],
+      "describe": "BE2_FD_YUGO_VOEN_REVOL",
+      "icon": "focus_yugo_voen_revol",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -80
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_YUGO_ROSSIYA",
+      "present": [
+        "BE2_F_YUGO_VOSTOK",
+        "BE2_F_YUGO_KONSTITUTSIYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1948
+        }
+      ],
+      "describe": "BE2_FD_YUGO_ROSSIYA",
+      "icon": "focus_yugo_rossiya",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -60
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_YUGO_VOINA",
+      "present": [
+        "BE2_F_YUGO_ROSSIYA",
+        "BE2_F_YUGO_VOEN_REVOL",
+        "BE2_F_YUGO_KONSTITUTSIYA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1950
+        }
+      ],
+      "describe": "BE2_FD_YUGO_VOINA",
+      "icon": "focus_yugo_voina",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 400000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -100
+        },
+        {
+          "type": "Happiness",
+          "Value": -15
+        }
+      ],
+      "FinishTurns": 85,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_YUGO_VREMYA",
+      "present": [
+        "BE2_F_YUGO_BRZDL",
+        "BE2_F_YUGO_ELEKTRO"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1945
+        }
+      ],
+      "describe": "BE2_FD_YUGO_VREMYA",
+      "icon": "focus_yugo_vremya",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": 4
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_SVOBODA",
+      "present": [
+        "BE2_F_YUGO_SABOR",
+        "BE2_F_YUGO_SUD",
+        "BE2_F_YUGO_NAUKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1947
+        }
+      ],
+      "describe": "BE2_FD_YUGO_SVOBODA",
+      "icon": "focus_yugo_svoboda",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.35
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_NASLEDIE",
+      "present": [
+        "BE2_F_YUGO_KONSTITUTSIYA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_NASLEDIE",
+      "icon": "focus_yugo_nasledie",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 200000
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_YUGO_GORA",
+      "present": [
+        "BE2_F_YUGO_VYSELID",
+        "BE2_F_YUGO_BALKAN"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_GORA",
+      "icon": "focus_yugo_gora",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.3
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_YUGO_RYNOK",
+      "present": [
+        "BE2_F_YUGO_PORT",
+        "BE2_F_YUGO_POLOPRIM"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_YUGO_RYNOK",
+      "icon": "focus_yugo_rynok",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 150000
+        },
+        {
+          "type": "Money",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_YUGO_ZVEZDA",
+      "present": [
+        "BE2_F_YUGO_NASLEDIE",
+        "BE2_F_YUGO_SVOBODA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1955
+        }
+      ],
+      "describe": "BE2_FD_YUGO_ZVEZDA",
+      "icon": "focus_yugo_zvezda",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    }
+  ]
+}

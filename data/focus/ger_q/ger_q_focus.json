@@ -1,0 +1,821 @@
+{
+  "name": "ger_q",
+  "CivTag": "ger_q",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_GERQ_VERSAMMLUNG",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "ger_n"
+        }
+      ],
+      "describe": "BE2_FD_GERQ_VERSAMMLUNG",
+      "icon": "focus_ger_q_versammlung",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GERQ_VERFASSUNG",
+      "present": [
+        "BE2_F_GERQ_VERSAMMLUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERQ_VERFASSUNG",
+      "icon": "focus_ger_q_verfassung",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GERQ_WAHLRECHT",
+      "present": [
+        "BE2_F_GERQ_VERFASSUNG"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_GERQ_WAHLRECHT",
+      "icon": "focus_ger_q_wahlrecht",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 12
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_BUNDESRAT",
+      "present": [
+        "BE2_F_GERQ_WAHLRECHT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_GERQ_BUNDESRAT",
+      "icon": "focus_ger_q_bundesrat",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": -0.1
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERQ_STABILITAET",
+      "present": [
+        "BE2_F_GERQ_BUNDESRAT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_GERQ_STABILITAET",
+      "icon": "focus_ger_q_stabilitaet",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERQ_GOLDMARK",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "ger_n"
+        }
+      ],
+      "describe": "BE2_FD_GERQ_GOLDMARK",
+      "icon": "focus_ger_q_goldmark",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GERQ_BANKEN",
+      "present": [
+        "BE2_F_GERQ_GOLDMARK"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERQ_BANKEN",
+      "icon": "focus_ger_q_banken",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_RUHR",
+      "present": [
+        "BE2_F_GERQ_BANKEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_GERQ_RUHR",
+      "icon": "focus_ger_q_ruhr",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_INDUSTRIE",
+      "present": [
+        "BE2_F_GERQ_RUHR"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_GERQ_INDUSTRIE",
+      "icon": "focus_ger_q_industrie",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERQ_RATIONALISIERUNG",
+      "present": [
+        "BE2_F_GERQ_INDUSTRIE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_GERQ_RATIONALISIERUNG",
+      "icon": "focus_ger_q_rationalisierung",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Happiness",
+          "Value": -14
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERQ_REICHSWEHR",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "ger_n"
+        }
+      ],
+      "describe": "BE2_FD_GERQ_REICHSWEHR",
+      "icon": "focus_ger_q_reichswehr",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GERQ_VORWARTS",
+      "present": [
+        "BE2_F_GERQ_REICHSWEHR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERQ_VORWARTS",
+      "icon": "focus_ger_q_vorwarts",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_WEHRREFORM",
+      "present": [
+        "BE2_F_GERQ_VORWARTS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_GERQ_WEHRREFORM",
+      "icon": "focus_ger_q_wehrreform",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Money",
+          "Value": -2500
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERQ_LUFTWAFFE",
+      "present": [
+        "BE2_F_GERQ_WEHRREFORM"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_GERQ_LUFTWAFFE",
+      "icon": "focus_ger_q_luftwaffe",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Money",
+          "Value": -3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GERQ_KAMPFBUND",
+      "present": [
+        "BE2_F_GERQ_LUFTWAFFE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_GERQ_KAMPFBUND",
+      "icon": "focus_ger_q_kampfbund",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERQ_SPD",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "ger_n"
+        }
+      ],
+      "describe": "BE2_FD_GERQ_SPD",
+      "icon": "focus_ger_q_spd",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_GEWERKSCHAFT",
+      "present": [
+        "BE2_F_GERQ_SPD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERQ_GEWERKSCHAFT",
+      "icon": "focus_ger_q_gewerkschaft",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_ARBEITSDIENST",
+      "present": [
+        "BE2_F_GERQ_GEWERKSCHAFT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_GERQ_ARBEITSDIENST",
+      "icon": "focus_ger_q_arbeitsdienst",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERQ_KOALITION",
+      "present": [
+        "BE2_F_GERQ_ARBEITSDIENST"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_GERQ_KOALITION",
+      "icon": "focus_ger_q_koalition",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GERQ_RESTRUKTURIERUNG",
+      "present": [
+        "BE2_F_GERQ_KOALITION"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_GERQ_RESTRUKTURIERUNG",
+      "icon": "focus_ger_q_restrukturierung",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERQ_NORDSEE",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "ger_n"
+        }
+      ],
+      "describe": "BE2_FD_GERQ_NORDSEE",
+      "icon": "focus_ger_q_nordsee",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 4
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1000
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GERQ_HAMBURG",
+      "present": [
+        "BE2_F_GERQ_NORDSEE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERQ_HAMBURG",
+      "icon": "focus_ger_q_hamburg",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_RHEINKOLONIEN",
+      "present": [
+        "BE2_F_GERQ_HAMBURG"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_GERQ_RHEINKOLONIEN",
+      "icon": "focus_ger_q_rheinkolonien",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERQ_SUDWESTEN",
+      "present": [
+        "BE2_F_GERQ_RHEINKOLONIEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_GERQ_SUDWESTEN",
+      "icon": "focus_ger_q_sudwesten",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERQ_EUROPAHAUPTSTADT",
+      "present": [
+        "BE2_F_GERQ_SUDWESTEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_GERQ_EUROPAHAUPTSTADT",
+      "icon": "focus_ger_q_europahauptstadt",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1800
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 30
+    }
+  ]
+}

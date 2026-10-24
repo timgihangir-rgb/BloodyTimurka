@@ -1,0 +1,1246 @@
+{
+  "name": "Польша",
+  "CivTag": "pol",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_POL_PLAN5",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_POL_PLAN5",
+      "icon": "focus_pol_plan5",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -800
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POL_ARMY5",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_POL_ARMY5",
+      "icon": "focus_pol_army5",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POL_SANACJA",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_POL_SANACJA",
+      "icon": "focus_pol_sanacja",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "CapitulationPoints",
+          "Value": 50
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POL_WSCHOD",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_POL_WSCHOD",
+      "icon": "focus_pol_wschod",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 300
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_ZACHOD",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_POL_ZACHOD",
+      "icon": "focus_pol_zachod",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        },
+        {
+          "type": "Money",
+          "Value": 600
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_CIPO",
+      "present": [
+        "BE2_F_POL_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_CIPO",
+      "icon": "focus_pol_cipo",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 80
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        },
+        {
+          "type": "Money",
+          "Value": 900
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_UGOL",
+      "present": [
+        "BE2_F_POL_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_UGOL",
+      "icon": "focus_pol_ugol",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 700
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_FABRYKA",
+      "present": [
+        "BE2_F_POL_PLAN5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_FABRYKA",
+      "icon": "focus_pol_fabryka",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_POLSFORD",
+      "present": [
+        "BE2_F_POL_FABRYKA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_POLSFORD",
+      "icon": "focus_pol_polsford",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 2
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 1100
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_NAUKA",
+      "present": [
+        "BE2_F_POL_CIPO"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_NAUKA",
+      "icon": "focus_pol_nauka",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1000
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_ATOM",
+      "present": [
+        "BE2_F_POL_NAUKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1946,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_ATOM",
+      "icon": "focus_pol_atom",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 1
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1800
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_POL_MOBPLAN",
+      "present": [
+        "BE2_F_POL_ARMY5"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1940,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_MOBPLAN",
+      "icon": "focus_pol_mobplan",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 250000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_PECHOTA",
+      "present": [
+        "BE2_F_POL_ARMY5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_PECHOTA",
+      "icon": "focus_pol_pechota",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_KAWALERIA",
+      "present": [
+        "BE2_F_POL_PECHOTA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_KAWALERIA",
+      "icon": "focus_pol_kawaleria",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Money",
+          "Value": -300
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_TANKI",
+      "present": [
+        "BE2_F_POL_PECHOTA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_TANKI",
+      "icon": "focus_pol_tanki",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Money",
+          "Value": -1000
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_LOTNICTWO",
+      "present": [
+        "BE2_F_POL_ARMY5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_LOTNICTWO",
+      "icon": "focus_pol_lotnictwo",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": -800
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_MORSKIFLOT",
+      "present": [
+        "BE2_F_POL_ARMY5"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_MORSKIFLOT",
+      "icon": "focus_pol_morskiflot",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 50
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Money",
+          "Value": -900
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_UTR",
+      "present": [
+        "BE2_F_POL_WSCHOD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_UTR",
+      "icon": "focus_pol_utr",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Money",
+          "Value": -1200
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_KORIDOR",
+      "present": [
+        "BE2_F_POL_WSCHOD"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1938,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_KORIDOR",
+      "icon": "focus_pol_koridor",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "ger",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 1500000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 90000
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_DVAFRONTA",
+      "present": [
+        "BE2_F_POL_UTR"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_DVAFRONTA",
+      "icon": "focus_pol_dvafronta",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": 0.2,
+          "Turns": 0
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_INTEL",
+      "present": [
+        "BE2_F_POL_WSCHOD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_INTEL",
+      "icon": "focus_pol_intel",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_TAJNA",
+      "present": [
+        "BE2_F_POL_INTEL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_TAJNA",
+      "icon": "focus_pol_tajna",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_RYWAL",
+      "present": [
+        "BE2_F_POL_SANACJA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_RYWAL",
+      "icon": "focus_pol_rywal",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Money",
+          "Value": 500
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_DEMOKRAT",
+      "present": [
+        "BE2_F_POL_RYWAL"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_DEMOKRAT",
+      "icon": "focus_pol_demokrat",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "ParlamentaricRepulic"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_PARLAMENT",
+      "present": [
+        "BE2_F_POL_DEMOKRAT"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_PARLAMENT",
+      "icon": "focus_pol_parlament",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "MixedRepublic"
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_CHLOP",
+      "present": [
+        "BE2_F_POL_SANACJA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_CHLOP",
+      "icon": "focus_pol_chlop",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 4000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "PopGrowth",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_NACJON",
+      "present": [
+        "BE2_F_POL_CHLOP"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_NACJON",
+      "icon": "focus_pol_nacjon",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_NARDEM",
+      "present": [
+        "BE2_F_POL_NACJON"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1943,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_NARDEM",
+      "icon": "focus_pol_nardem",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "Dictatorshipoftheproletariat"
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -15
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_POL_FRANCE",
+      "present": [
+        "BE2_F_POL_ZACHOD"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POL_FRANCE",
+      "icon": "focus_pol_france",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "fra",
+          "Relation": 0.15
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 400
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POL_DANZIG",
+      "present": [
+        "BE2_F_POL_ZACHOD"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1938,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_DANZIG",
+      "icon": "focus_pol_danzig",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POL_PAKT",
+      "present": [
+        "BE2_F_POL_DANZIG"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1939,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_PAKT",
+      "icon": "focus_pol_pakt",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "rus_c",
+          "Relation": 0.15
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_LONDON",
+      "present": [
+        "BE2_F_POL_PAKT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_LONDON",
+      "icon": "focus_pol_london",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_POL_OPOR",
+      "present": [
+        "BE2_F_POL_LONDON"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1943,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_OPOR",
+      "icon": "focus_pol_opor",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_POL_OSLOB",
+      "present": [
+        "BE2_F_POL_OPOR"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_OSLOB",
+      "icon": "focus_pol_oslob",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Population",
+          "Value": 8000000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 20
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POL_CIVILWAR",
+      "present": [
+        "BE2_F_POL_NARDEM",
+        "BE2_F_POL_OSLOB"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_POL_CIVILWAR",
+      "icon": "focus_pol_civilwar",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "pol_c",
+          "RebelGroup": "pol",
+          "Share": 0.35,
+          "Dominance": 0.45,
+          "Government": "Dictatorshipoftheproletariat",
+          "Cities": [
+            "Warsaw",
+            "Katowice",
+            "Gdansk"
+          ],
+          "Connect": true,
+          "Disconnected": true,
+          "TakeControl": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "GenocidePower",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -25
+        }
+      ],
+      "FinishTurns": 85,
+      "AI_Trend": 20
+    }
+  ]
+}

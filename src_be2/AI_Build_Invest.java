@@ -1,0 +1,87 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package age.of.civilizations2.jakowski.lukasz;
+
+import age.of.civilizations2.jakowski.lukasz.AI_Build;
+import age.of.civilizations2.jakowski.lukasz.AI_Style;
+import age.of.civilizations2.jakowski.lukasz.CFG;
+import age.of.civilizations2.jakowski.lukasz.DiplomacyManager;
+import java.util.ArrayList;
+import java.util.List;
+
+public class AI_Build_Invest
+extends AI_Build {
+    public List<Integer> lProvincesToInvest = new ArrayList<Integer>();
+    public float fReserve = 1.0f;
+    public int iMaxPop = 1;
+
+    public AI_Build_Invest(int nCivID, long nMoney) {
+        super(nCivID, nMoney);
+        this.fReserve = 1.0f - (float)CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_RESRVE_RAND / 100.0f + (float)CFG.oR.nextInt(CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_RESRVE_RAND) / 100.0f;
+        try {
+            for (int i = 0; i < CFG.game.getCiv(nCivID).getNumOfProvinces(); ++i) {
+                if (CFG.game.getProvince(CFG.game.getCiv(nCivID).getProvinceID(i)).isOccupied() || !(CFG.game.getProvince(CFG.game.getCiv(nCivID).getProvinceID(i)).getProvinceStability() > CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_MIN_STABILITY) || !(CFG.game.getProvince(CFG.game.getCiv(nCivID).getProvinceID(i)).getRevolutionaryRisk() <= CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_MAX_REV_RISK) || CFG.game.getCiv(nCivID).isInvestOrganized(CFG.game.getCiv(nCivID).getProvinceID(i))) continue;
+                this.lProvincesToInvest.add(CFG.game.getCiv(nCivID).getProvinceID(i));
+                this.iMaxDangerLevel = Math.max(this.iMaxDangerLevel, CFG.game.getProvince(CFG.game.getCiv(nCivID).getProvinceID(i)).getDangerLevel());
+                this.iMaxPop = Math.max(this.iMaxPop, CFG.game.getProvince(CFG.game.getCiv(nCivID).getProvinceID(i)).getPopulationData().getPopulation());
+            }
+        }
+        catch (IndexOutOfBoundsException ex) {
+            CFG.exceptionStack(ex);
+        }
+    }
+
+    @Override
+    public boolean build(int nCivID, int iteration, boolean out) {
+        int iBestProvinceID = -1;
+        float iBestProvinceID_Score = 0.0f;
+        for (int i = this.lProvincesToInvest.size() - 1; i >= 0; --i) {
+            if (iBestProvinceID < 0) {
+                iBestProvinceID = this.lProvincesToInvest.get(i);
+                iBestProvinceID_Score = this.getProvinceBuildScore(nCivID, iBestProvinceID);
+                continue;
+            }
+            if (!(this.getProvinceBuildScore(nCivID, this.lProvincesToInvest.get(i)) > iBestProvinceID_Score)) continue;
+            iBestProvinceID = this.lProvincesToInvest.get(i);
+            iBestProvinceID_Score = this.getProvinceBuildScore(nCivID, iBestProvinceID);
+        }
+        if (iBestProvinceID >= 0) {
+            int maxInvestmentGold = (int)Math.min(this.getMoney(nCivID), (long)DiplomacyManager.invest_MaxEconomy_Gold(iBestProvinceID, nCivID));
+            int minNumOfInvests = (int)Math.min(Math.floor(CFG.game.getCiv(nCivID).getMovePoints() / 12), (double)(CFG.game.getCiv(nCivID).getNumOfProvinces() / 10));
+            if (iteration == 0 && minNumOfInvests > 1 && CFG.oR.nextInt(100) < CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_INVEST_SECOND_INVEST_CHANCE) {
+                maxInvestmentGold = (int)((float)maxInvestmentGold * (1.0f - (float)CFG.oR.nextInt(Math.max(2, CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_INVEST_SECOND_INVEST_MAX_PERC)) / 100.0f));
+            }
+            if (DiplomacyManager.invest(iBestProvinceID, nCivID, maxInvestmentGold)) {
+                out = true;
+                if (this.getMoney(nCivID) > 10L && 12 <= CFG.game.getCiv(nCivID).getMovePoints()) {
+                    int tSize = 0;
+                    for (int i = this.lProvincesToInvest.size() - 1; i >= 0; --i) {
+                        if (this.lProvincesToInvest.get(i) == iBestProvinceID) {
+                            this.lProvincesToInvest.remove(i);
+                            continue;
+                        }
+                        ++tSize;
+                    }
+                    if (tSize > 0 && iteration < 4) {
+                        return this.build(nCivID, ++iteration, out);
+                    }
+                }
+            }
+        }
+        return out;
+    }
+
+    public float getProvinceBuildScore(int nCivID, int nProvinceID) {
+        return ((float)CFG.game.getProvince(nProvinceID).getPopulationData().getPopulation() / (float)this.iMaxPop * CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_INVEST_POP_SCORE + CFG.game.getProvince(nProvinceID).getDevelopmentLevel() / CFG.game.getCiv(nCivID).getTechnologyLevel() * CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_INVEST_DEVELOPMENT_SCORE + (1.0f - Math.min(1.0f, (float)CFG.game.getProvince(nProvinceID).getPopulationData().getPopulation() / (float)CFG.game.getProvince(nProvinceID).getEconomy())) * CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_INVEST_POP_ECO_DIFFERENCE_SCORE) * (1.0f - CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_STABILITY_SCORE + CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_STABILITY_SCORE * CFG.game.getProvince(nProvinceID).getProvinceStability()) * (1.0f - CFG.game.getCiv((int)nCivID).civGameData.civPersonality.BUILD_DANGER_SCORE * (float)CFG.game.getProvince(nProvinceID).getDangerLevel() / (float)this.iMaxDangerLevel) * (1.0f - CFG.game.getProvince(nProvinceID).getRevolutionaryRisk());
+    }
+
+    @Override
+    public long getMoney(int nCivID) {
+        if (CFG.game.getCiv(nCivID).getMoney() < AI_Style.getMoney_MinReserve(nCivID)) {
+            return 0L;
+        }
+        return (long)((float)CFG.game.getCiv(nCivID).getMoney() - (float)AI_Style.getMoney_MinReserve(nCivID) * this.fReserve);
+    }
+}
+

@@ -1,0 +1,811 @@
+{
+  "name": "fra_b",
+  "CivTag": "fra_b",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_FRAB_ARMY",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_FRAB_ARMY",
+      "icon": "focus_fra_b_army",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_FRAB_DRAGOONS",
+      "present": [
+        "BE2_F_FRAB_ARMY"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRAB_DRAGOONS",
+      "icon": "focus_fra_b_dragoons",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_FRAB_FORTRESS",
+      "present": [
+        "BE2_F_FRAB_DRAGOONS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_FRAB_FORTRESS",
+      "icon": "focus_fra_b_fortress",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Money",
+          "Value": -3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_CAVALRY",
+      "present": [
+        "BE2_F_FRAB_FORTRESS"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_FRAB_CAVALRY",
+      "icon": "focus_fra_b_cavalry",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRAB_EMPIREWAR",
+      "present": [
+        "BE2_F_FRAB_CAVALRY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_FRAB_EMPIREWAR",
+      "icon": "focus_fra_b_empirewar",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_FRAB_PLEBISCITE",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_FRAB_PLEBISCITE",
+      "icon": "focus_fra_b_plebiscite",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 500
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_FRAB_SENATE",
+      "present": [
+        "BE2_F_FRAB_PLEBISCITE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRAB_SENATE",
+      "icon": "focus_fra_b_senate",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_FRAB_MINISTRY",
+      "present": [
+        "BE2_F_FRAB_SENATE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_FRAB_MINISTRY",
+      "icon": "focus_fra_b_ministry",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": -0.1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_ORDER",
+      "present": [
+        "BE2_F_FRAB_MINISTRY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_FRAB_ORDER",
+      "icon": "focus_fra_b_order",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.14
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRAB_LEGITIMACY",
+      "present": [
+        "BE2_F_FRAB_ORDER"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_FRAB_LEGITIMACY",
+      "icon": "focus_fra_b_legitimacy",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_FRAB_BANK",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_FRAB_BANK",
+      "icon": "focus_fra_b_bank",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_FRAB_RAIL",
+      "present": [
+        "BE2_F_FRAB_BANK"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRAB_RAIL",
+      "icon": "focus_fra_b_rail",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_FRAB_INDUSTRY",
+      "present": [
+        "BE2_F_FRAB_RAIL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_FRAB_INDUSTRY",
+      "icon": "focus_fra_b_industry",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_CANAL",
+      "present": [
+        "BE2_F_FRAB_INDUSTRY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_FRAB_CANAL",
+      "icon": "focus_fra_b_canal",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRAB_COLONY",
+      "present": [
+        "BE2_F_FRAB_CANAL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_FRAB_COLONY",
+      "icon": "focus_fra_b_colony",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 5000
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -4
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_FRAB_LEGION",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_FRAB_LEGION",
+      "icon": "focus_fra_b_legion",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_EDUCATION",
+      "present": [
+        "BE2_F_FRAB_LEGION"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRAB_EDUCATION",
+      "icon": "focus_fra_b_education",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_SCIENCE",
+      "present": [
+        "BE2_F_FRAB_EDUCATION"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_FRAB_SCIENCE",
+      "icon": "focus_fra_b_science",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRAB_ART",
+      "present": [
+        "BE2_F_FRAB_SCIENCE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_FRAB_ART",
+      "icon": "focus_fra_b_art",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 12
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_FRAB_MEMORY",
+      "present": [
+        "BE2_F_FRAB_ART"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_FRAB_MEMORY",
+      "icon": "focus_fra_b_memory",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_FRAB_MARCH",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "eng"
+        }
+      ],
+      "describe": "BE2_FD_FRAB_MARCH",
+      "icon": "focus_fra_b_march",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 40000
+        },
+        {
+          "type": "Happiness",
+          "Value": -4
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_FRAB_RHONE",
+      "present": [
+        "BE2_F_FRAB_MARCH"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_FRAB_RHONE",
+      "icon": "focus_fra_b_rhone",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_ATLANTIC",
+      "present": [
+        "BE2_F_FRAB_RHONE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_FRAB_ATLANTIC",
+      "icon": "focus_fra_b_atlantic",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_FRAB_MEDITERRANEE",
+      "present": [
+        "BE2_F_FRAB_ATLANTIC"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_FRAB_MEDITERRANEE",
+      "icon": "focus_fra_b_mediterranee",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_FRAB_HEXAGONE",
+      "present": [
+        "BE2_F_FRAB_MEDITERRANEE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_FRAB_HEXAGONE",
+      "icon": "focus_fra_b_hexagone",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        }
+      ],
+      "FinishTurns": 75,
+      "AI_Trend": 30
+    }
+  ]
+}

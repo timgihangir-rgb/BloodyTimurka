@@ -1,0 +1,135 @@
+/*
+ * Decompiled with CFR 0.152.
+ */
+package age.of.civilizations2.jakowski.lukasz;
+
+import age.of.civilizations2.jakowski.lukasz.CFG;
+import age.of.civilizations2.jakowski.lukasz.Event_Outcome;
+import age.of.civilizations2.jakowski.lukasz.Game_Calendar;
+import age.of.civilizations2.jakowski.lukasz.Menu;
+import age.of.civilizations2.jakowski.lukasz.MenuElement_Hover_v2_Element2;
+import age.of.civilizations2.jakowski.lukasz.MenuElement_Hover_v2_Element_Type;
+import age.of.civilizations2.jakowski.lukasz.MenuElement_Hover_v2_Element_Type_Flag;
+import age.of.civilizations2.jakowski.lukasz.MenuElement_Hover_v2_Element_Type_Text;
+import java.util.ArrayList;
+import java.util.List;
+
+public class Event_Outcome_MilitaryAccess
+extends Event_Outcome {
+    public int iCivID = -1;
+    public int iCivID2 = -1;
+    public int iValue = 0;
+
+    Event_Outcome_MilitaryAccess() {
+    }
+
+    @Override
+    public int getCivID() {
+        return this.iCivID;
+    }
+
+    @Override
+    public void setCivID(int nCivID) {
+        this.iCivID = nCivID;
+    }
+
+    @Override
+    public int getCivID2() {
+        return this.iCivID2;
+    }
+
+    @Override
+    public void setCivID2(int nCivID) {
+        this.iCivID2 = nCivID;
+    }
+
+    @Override
+    public boolean updateCivIDAfterRemove(int nRemovedCivID) {
+        boolean out = false;
+        if (this.iCivID == nRemovedCivID) {
+            this.iCivID = -1;
+            out = true;
+        } else if (nRemovedCivID < this.iCivID) {
+            --this.iCivID;
+        }
+        if (this.iCivID2 == nRemovedCivID) {
+            this.iCivID2 = -1;
+            out = true;
+        } else if (nRemovedCivID < this.iCivID2) {
+            --this.iCivID2;
+        }
+        return out;
+    }
+
+    @Override
+    public int getValue() {
+        return this.iValue;
+    }
+
+    @Override
+    public void setValue(int nValue) {
+        this.iValue = nValue;
+    }
+
+    @Override
+    public void outcomeAction() {
+        if (this.canMakeAction()) {
+            CFG.game.setMilitaryAccess(this.getCivID(), this.getCivID2(), this.getValue());
+        }
+    }
+
+    public boolean canMakeAction() {
+        try {
+            return this.getValue() > 0 && this.getCivID() >= 0 && this.getCivID() < CFG.game.getCivsSize() && this.getCivID2() >= 0 && this.getCivID2() < CFG.game.getCivsSize() && (int)CFG.game.getCivRelation_OfCivB(this.getCivID(), this.getCivID2()) != -100;
+        }
+        catch (IndexOutOfBoundsException indexOutOfBoundsException) {
+            return false;
+        }
+    }
+
+    @Override
+    public List<MenuElement_Hover_v2_Element2> getHoverText() {
+        try {
+            ArrayList<MenuElement_Hover_v2_Element2> tElements = new ArrayList<MenuElement_Hover_v2_Element2>();
+            ArrayList<MenuElement_Hover_v2_Element_Type> tData = new ArrayList<MenuElement_Hover_v2_Element_Type>();
+            if (this.canMakeAction()) {
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(CFG.langManager.get("MilitaryAccess") + ":", CFG.COLOR_BUTTON_GAME_TEXT_ACTIVE));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Flag(this.getCivID(), CFG.PADDING, CFG.PADDING));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(CFG.game.getCiv(this.getCivID()).getCivName()));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(" -> "));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(CFG.game.getCiv(this.getCivID2()).getCivName()));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Flag(this.getCivID2(), CFG.PADDING, CFG.PADDING));
+                tElements.add(new MenuElement_Hover_v2_Element2(tData));
+                tData.clear();
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(CFG.langManager.get("Expires") + ": "));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(Game_Calendar.getDate_ByTurnID(Game_Calendar.TURN_ID + this.getValue()), CFG.COLOR_TEXT_MODIFIER_NEUTRAL2));
+                tData.add(new MenuElement_Hover_v2_Element_Type_Text(" [" + CFG.langManager.get("Turns") + ": " + this.getValue() + "]", CFG.COLOR_TEXT_MODIFIER_NEUTRAL));
+                tElements.add(new MenuElement_Hover_v2_Element2(tData));
+                tData.clear();
+            }
+            return tElements;
+        }
+        catch (IndexOutOfBoundsException indexOutOfBoundsException) {
+        }
+        catch (NullPointerException nullPointerException) {
+            // empty catch block
+        }
+        return new ArrayList<MenuElement_Hover_v2_Element2>();
+    }
+
+    @Override
+    public String getConditionText() {
+        try {
+            return CFG.langManager.get("MilitaryAccess") + ": " + CFG.game.getCiv(this.getCivID()).getCivName() + ", " + CFG.game.getCiv(this.getCivID2()).getCivName() + ": " + this.getValue();
+        }
+        catch (IndexOutOfBoundsException ex) {
+            return CFG.langManager.get("MilitaryAccess");
+        }
+    }
+
+    @Override
+    public final void editViewID() {
+        CFG.menuManager.setViewID(Menu.eCREATE_SCENARIO_EVENTS_OUT_MILITARY);
+    }
+}
+

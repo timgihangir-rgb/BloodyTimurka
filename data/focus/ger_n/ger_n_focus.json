@@ -1,0 +1,1258 @@
+{
+  "name": "Германская монархия",
+  "CivTag": "ger_n",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_GERN_KAISER",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GERN_KAISER",
+      "icon": "focus_ger_kaiser",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 80000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 500
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_GERN_REICHSTAG",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GERN_REICHSTAG",
+      "icon": "focus_ger_reichstag",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Money",
+          "Value": -300
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GERN_KRONPRINZ",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GERN_KRONPRINZ",
+      "icon": "focus_ger_kronprinz",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 60000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1,
+          "Turns": 60
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERN_WIEDERBAU",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GERN_WIEDERBAU",
+      "icon": "focus_ger_wiederbau",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -1500
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_GERN_KERN",
+      "present": [],
+      "condition": [],
+      "describe": "BE2_FD_GERN_KERN",
+      "icon": "focus_ger_kern",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GERN_VERFASSUNG",
+      "present": [
+        "BE2_F_GERN_REICHSTAG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_VERFASSUNG",
+      "icon": "focus_ger_verfassung",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Money",
+          "Value": -200
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERN_WAHLEN",
+      "present": [
+        "BE2_F_GERN_VERFASSUNG"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_WAHLEN",
+      "icon": "focus_ger_wahlen",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERN_GEWERKSCHAFTEN",
+      "present": [
+        "BE2_F_GERN_VERFASSUNG"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_GEWERKSCHAFTEN",
+      "icon": "focus_ger_gewerkschaften",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 200
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GERN_BUND",
+      "present": [
+        "BE2_F_GERN_WAHLEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1943,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_BUND",
+      "icon": "focus_ger_bund",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_KOLONIEN",
+      "present": [
+        "BE2_F_GERN_BUND"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1947,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_KOLONIEN",
+      "icon": "focus_ger_kolonien",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 150
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1000
+        },
+        {
+          "type": "Money",
+          "Value": 500
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERN_ABSOLUT",
+      "present": [
+        "BE2_F_GERN_KAISER"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_ABSOLUT",
+      "icon": "focus_ger_absolut",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "AbsoluteMonarchy"
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Happiness",
+          "Value": -12
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GERN_REPUBLIK",
+      "present": [
+        "BE2_F_GERN_WAHLEN"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_REPUBLIK",
+      "icon": "focus_ger_republik",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "ParlamentaricRepulic"
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 250
+        },
+        {
+          "type": "Happiness",
+          "Value": 12
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERN_BONAPART",
+      "present": [
+        "BE2_F_GERN_PARADE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_BONAPART",
+      "icon": "focus_ger_bonapart",
+      "effect": [
+        {
+          "type": "Government",
+          "To": "Bonapartism"
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.25,
+          "Turns": 60
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_GERN_GENERALSTAB",
+      "present": [
+        "BE2_F_GERN_KRONPRINZ"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_GENERALSTAB",
+      "icon": "focus_ger_generalstab",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "DefenseBonus",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_GERN_PANZERSCHULE",
+      "present": [
+        "BE2_F_GERN_KRONPRINZ"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_PANZERSCHULE",
+      "icon": "focus_ger_panzerschule",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERN_LUFT",
+      "present": [
+        "BE2_F_GERN_KRONPRINZ"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_LUFT",
+      "icon": "focus_ger_luft",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15,
+          "Turns": 60
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": -600
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERN_UBOOTE",
+      "present": [
+        "BE2_F_GERN_GENERALSTAB"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_UBOOTE",
+      "icon": "focus_ger_uboote",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 60
+        },
+        {
+          "type": "Money",
+          "Value": -500
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_WEHRREFORM",
+      "present": [
+        "BE2_F_GERN_GENERALSTAB"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_WEHRREFORM",
+      "icon": "focus_ger_wehrreform",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "RecruitablePopulation",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MilitaryUpkeep",
+          "Value": -0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 150000
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GERN_PARADE",
+      "present": [
+        "BE2_F_GERN_PANZERSCHULE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1944,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_PARADE",
+      "icon": "focus_ger_parade",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 15
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.05
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 100
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERN_RUHR",
+      "present": [
+        "BE2_F_GERN_WIEDERBAU"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_RUHR",
+      "icon": "focus_ger_ruhr",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        },
+        {
+          "type": "Money",
+          "Value": 1000
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERN_AUTARKIE",
+      "present": [
+        "BE2_F_GERN_WIEDERBAU"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_AUTARKIE",
+      "icon": "focus_ger_autarkie",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": -0.1,
+          "Turns": 80
+        },
+        {
+          "type": "Money",
+          "Value": 800
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_INDUSTRIE",
+      "present": [
+        "BE2_F_GERN_RUHR"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_INDUSTRIE",
+      "icon": "focus_ger_industrie",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.3,
+          "Turns": 80
+        },
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Happiness",
+          "Value": -5
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_GERN_FRIEDRICHPLAN",
+      "present": [
+        "BE2_F_GERN_INDUSTRIE",
+        "BE2_F_GERN_AUTARKIE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_FRIEDRICHPLAN",
+      "icon": "focus_ger_friedrichplan",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_GERN_REAKTOR",
+      "present": [
+        "BE2_F_GERN_KERN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1942,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_REAKTOR",
+      "icon": "focus_ger_reaktor",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "NuclearWeapons",
+          "Value": 1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1500
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERN_DUESENFLIEGER",
+      "present": [
+        "BE2_F_GERN_KERN"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_DUESENFLIEGER",
+      "icon": "focus_ger_duesenflieger",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 1.0,
+          "Turns": 0
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERN_RAKETEN",
+      "present": [
+        "BE2_F_GERN_REAKTOR",
+        "BE2_F_GERN_DUESENFLIEGER"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_RAKETEN",
+      "icon": "focus_ger_raketen",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.2,
+          "Turns": 60
+        },
+        {
+          "type": "Tech",
+          "Value": 2
+        },
+        {
+          "type": "Money",
+          "Value": -1200
+        }
+      ],
+      "FinishTurns": 85,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GERN_HOCHSCHULE",
+      "present": [
+        "BE2_F_GERN_KERN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1946,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_HOCHSCHULE",
+      "icon": "focus_ger_hochschule",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.25,
+          "Turns": 0
+        },
+        {
+          "type": "Tech",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": -400
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_FREIWILLIGE",
+      "present": [
+        "BE2_F_GERN_REICHSTAG"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1941,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_FREIWILLIGE",
+      "icon": "focus_ger_freiwillige",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 800
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_WESTBUND",
+      "present": [
+        "BE2_F_GERN_FREIWILLIGE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_GERN_WESTBUND",
+      "icon": "focus_ger_westbund",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.1
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 300
+        },
+        {
+          "type": "Money",
+          "Value": 1200
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_NEUTRALITAET",
+      "present": [
+        "BE2_F_GERN_FREIWILLIGE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1945,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_NEUTRALITAET",
+      "icon": "focus_ger_neutralitaet",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": -0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 55,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GERN_SPALTUNG",
+      "present": [
+        "BE2_F_GERN_NEUTRALITAET"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1948,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_SPALTUNG",
+      "icon": "focus_ger_spaltung",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": -800
+        },
+        {
+          "type": "Money",
+          "Value": -1000
+        },
+        {
+          "type": "Happiness",
+          "Value": -20
+        }
+      ],
+      "FinishTurns": 50,
+      "AI_Trend": 20
+    },
+    {
+      "name": "BE2_F_GERN_EINIGUNG",
+      "present": [
+        "BE2_F_GERN_SPALTUNG",
+        "BE2_F_GERN_WESTBUND"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1950,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_EINIGUNG",
+      "icon": "focus_ger_einigung",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 300000
+        },
+        {
+          "type": "Stat",
+          "Name": "MovePoints",
+          "Value": 1
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Happiness",
+          "Value": 15
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_GERN_REVANCHE",
+      "present": [
+        "BE2_F_GERN_PARADE",
+        "BE2_F_GERN_RAKETEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1949,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_REVANCHE",
+      "icon": "focus_ger_revanche",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.3,
+          "Turns": 0
+        },
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": -0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 400000
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 25
+    },
+    {
+      "name": "BE2_F_GERN_EUROPA",
+      "present": [
+        "BE2_F_GERN_EINIGUNG",
+        "BE2_F_GERN_KOLONIEN"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1952,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_EUROPA",
+      "icon": "focus_ger_europa",
+      "effect": [
+        {
+          "type": "Relation",
+          "CivTag": "*",
+          "Relation": 0.2
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.15,
+          "Turns": 0
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Stat",
+          "Name": "CapitulationPoints",
+          "Value": 100
+        },
+        {
+          "type": "Happiness",
+          "Value": 10
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_GERN_BURGERKRIEG",
+      "present": [
+        "BE2_F_GERN_EUROPA",
+        "BE2_F_GERN_REVANCHE",
+        "BE2_F_GERN_BONAPART"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Year": 1952,
+          "Month": 0,
+          "Day": 0
+        }
+      ],
+      "describe": "BE2_FD_GERN_BURGERKRIEG",
+      "icon": "focus_ger_burgerkrieg",
+      "effect": [
+        {
+          "type": "CivilWar",
+          "NewCivTag": "ger_q",
+          "RebelGroup": "ger",
+          "Share": 0.35,
+          "Dominance": 0.45,
+          "Government": "MixedRepublic",
+          "From": "east",
+          "Band": 0.45,
+          "TakeControl": true
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": -0.25
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 200000
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        },
+        {
+          "type": "Happiness",
+          "Value": -25
+        }
+      ],
+      "FinishTurns": 90,
+      "AI_Trend": 20
+    }
+  ]
+}

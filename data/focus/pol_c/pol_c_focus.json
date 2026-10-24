@@ -1,0 +1,833 @@
+{
+  "name": "pol_c",
+  "CivTag": "pol_c",
+  "FOCUS_LIST": [
+    {
+      "name": "BE2_F_POLC_PARTIA",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "pol"
+        }
+      ],
+      "describe": "BE2_FD_POLC_PARTIA",
+      "icon": "focus_pol_c_partia",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Happiness",
+          "Value": 8
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_POLC_KONGRES",
+      "present": [
+        "BE2_F_POLC_PARTIA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POLC_KONGRES",
+      "icon": "focus_pol_c_kongres",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.12
+        },
+        {
+          "type": "Stat",
+          "Name": "DiplomacyPoints",
+          "Value": 400
+        },
+        {
+          "type": "Happiness",
+          "Value": 6
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_POLC_SOWIETY",
+      "present": [
+        "BE2_F_POLC_KONGRES"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_POLC_SOWIETY",
+      "icon": "focus_pol_c_sowiety",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        },
+        {
+          "type": "Modifier",
+          "Name": "Administration",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POLC_PLANOWANIE",
+      "present": [
+        "BE2_F_POLC_SOWIETY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_POLC_PLANOWANIE",
+      "icon": "focus_pol_c_planowanie",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "EconomyGrowth",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POLC_PIECIOLATKA",
+      "present": [
+        "BE2_F_POLC_PLANOWANIE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_POLC_PIECIOLATKA",
+      "icon": "focus_pol_c_pieciolatka",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 60,
+      "AI_Trend": 35
+    },
+    {
+      "name": "BE2_F_POLC_MILICJA",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "pol"
+        }
+      ],
+      "describe": "BE2_FD_POLC_MILICJA",
+      "icon": "focus_pol_c_milicja",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 700
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 50000
+        },
+        {
+          "type": "Happiness",
+          "Value": 5
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 60
+    },
+    {
+      "name": "BE2_F_POLC_BRONI",
+      "present": [
+        "BE2_F_POLC_MILICJA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POLC_BRONI",
+      "icon": "focus_pol_c_broni",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        },
+        {
+          "type": "Money",
+          "Value": -2000
+        },
+        {
+          "type": "Modifier",
+          "Name": "AttackBonus",
+          "Value": 0.15
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_POLC_FRONTOVOY",
+      "present": [
+        "BE2_F_POLC_BRONI"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_POLC_FRONTOVOY",
+      "icon": "focus_pol_c_frontovoy",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1200
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 100000
+        },
+        {
+          "type": "Modifier",
+          "Name": "MovementPoints",
+          "Value": 0.15
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POLC_LOTNICTWO",
+      "present": [
+        "BE2_F_POLC_FRONTOVOY"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_POLC_LOTNICTWO",
+      "icon": "focus_pol_c_lotnictwo",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1500
+        },
+        {
+          "type": "Money",
+          "Value": -3000
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POLC_WOJSKO",
+      "present": [
+        "BE2_F_POLC_LOTNICTWO"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_POLC_WOJSKO",
+      "icon": "focus_pol_c_wojsko",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "ManPower",
+          "Value": 250000
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_POLC_NOWA_HUTA",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "pol"
+        }
+      ],
+      "describe": "BE2_FD_POLC_NOWA_HUTA",
+      "icon": "focus_pol_c_nowa_huta",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1500
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_POLC_SIEC",
+      "present": [
+        "BE2_F_POLC_NOWA_HUTA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POLC_SIEC",
+      "icon": "focus_pol_c_siec",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_POLC_PRZEMYSL",
+      "present": [
+        "BE2_F_POLC_SIEC"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_POLC_PRZEMYSL",
+      "icon": "focus_pol_c_przemysl",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4000
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.2
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POLC_EKSPORT",
+      "present": [
+        "BE2_F_POLC_PRZEMYSL"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_POLC_EKSPORT",
+      "icon": "focus_pol_c_eksport",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 3500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeTaxation",
+          "Value": 0.15
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POLC_UPRZEMYSLENIE",
+      "present": [
+        "BE2_F_POLC_EKSPORT"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_POLC_UPRZEMYSLENIE",
+      "icon": "focus_pol_c_uprzemyslenie",
+      "effect": [
+        {
+          "type": "Money",
+          "Value": 4500
+        },
+        {
+          "type": "Modifier",
+          "Name": "IncomeProduction",
+          "Value": 0.25
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 70,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_POLC_SZKOLA",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "pol"
+        }
+      ],
+      "describe": "BE2_FD_POLC_SZKOLA",
+      "icon": "focus_pol_c_szkola",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "TaxationLevel",
+          "Value": 1
+        },
+        {
+          "type": "Money",
+          "Value": 1500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 30,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POLC_NAUKA",
+      "present": [
+        "BE2_F_POLC_SZKOLA"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POLC_NAUKA",
+      "icon": "focus_pol_c_nauka",
+      "effect": [
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.2
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.06
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POLC_RADIO",
+      "present": [
+        "BE2_F_POLC_NAUKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_POLC_RADIO",
+      "icon": "focus_pol_c_radio",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.08
+        },
+        {
+          "type": "Happiness",
+          "Value": -6
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.05
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POLC_KULTURA",
+      "present": [
+        "BE2_F_POLC_RADIO"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_POLC_KULTURA",
+      "icon": "focus_pol_c_kultura",
+      "effect": [
+        {
+          "type": "Happiness",
+          "Value": 10
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.05
+        },
+        {
+          "type": "Money",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 40
+    },
+    {
+      "name": "BE2_F_POLC_IDEOLOGIA",
+      "present": [
+        "BE2_F_POLC_KULTURA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_POLC_IDEOLOGIA",
+      "icon": "focus_pol_c_ideologia",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.15
+        },
+        {
+          "type": "Happiness",
+          "Value": -10
+        },
+        {
+          "type": "Modifier",
+          "Name": "Research",
+          "Value": 0.1
+        }
+      ],
+      "FinishTurns": 65,
+      "AI_Trend": 30
+    },
+    {
+      "name": "BE2_F_POLC_WYBRZEZE",
+      "present": [],
+      "condition": [
+        {
+          "type": "Civilization_Exist",
+          "CivTag": "pol"
+        }
+      ],
+      "describe": "BE2_FD_POLC_WYBRZEZE",
+      "icon": "focus_pol_c_wybrzeze",
+      "effect": [
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 1000
+        },
+        {
+          "type": "Happiness",
+          "Value": 4
+        }
+      ],
+      "FinishTurns": 25,
+      "AI_Trend": 55
+    },
+    {
+      "name": "BE2_F_POLC_GDANSK",
+      "present": [
+        "BE2_F_POLC_WYBRZEZE"
+      ],
+      "condition": [],
+      "describe": "BE2_FD_POLC_GDANSK",
+      "icon": "focus_pol_c_gdansk",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Money",
+          "Value": 3000
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 600
+        }
+      ],
+      "FinishTurns": 35,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POLC_POMORZE",
+      "present": [
+        "BE2_F_POLC_GDANSK"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1953
+        }
+      ],
+      "describe": "BE2_FD_POLC_POMORZE",
+      "icon": "focus_pol_c_pomorze",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 900
+        },
+        {
+          "type": "Money",
+          "Value": 2500
+        }
+      ],
+      "FinishTurns": 40,
+      "AI_Trend": 50
+    },
+    {
+      "name": "BE2_F_POLC_WIELKOPOLSKA",
+      "present": [
+        "BE2_F_POLC_POMORZE"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1956
+        }
+      ],
+      "describe": "BE2_FD_POLC_WIELKOPOLSKA",
+      "icon": "focus_pol_c_wielkopolska",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 1,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 1000
+        },
+        {
+          "type": "Stat",
+          "Name": "Food",
+          "Value": 2000
+        }
+      ],
+      "FinishTurns": 45,
+      "AI_Trend": 45
+    },
+    {
+      "name": "BE2_F_POLC_PANSTWO",
+      "present": [
+        "BE2_F_POLC_WIELKOPOLSKA"
+      ],
+      "condition": [
+        {
+          "type": "Time_Reach",
+          "Month": 0,
+          "Day": 0,
+          "Year": 1959
+        }
+      ],
+      "describe": "BE2_FD_POLC_PANSTWO",
+      "icon": "focus_pol_c_panstwo",
+      "effect": [
+        {
+          "type": "Annexation",
+          "CivTag": "*",
+          "Provinces": 2,
+          "Share": 0.0,
+          "War": true
+        },
+        {
+          "type": "Stat",
+          "Name": "MilitaryPoints",
+          "Value": 2000
+        },
+        {
+          "type": "Stat",
+          "Name": "Stability",
+          "Value": 0.1
+        },
+        {
+          "type": "Happiness",
+          "Value": -8
+        }
+      ],
+      "FinishTurns": 80,
+      "AI_Trend": 30
+    }
+  ]
+}
